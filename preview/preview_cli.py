@@ -12,8 +12,9 @@ from cncodec import transport
 from cncodec.__main__ import main as geometry_cli, read_limited, write_output
 import solar_codec
 import step_delta
+import step_delta_v2
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 GEOMETRY = ("geometry-pack", "geometry-verify", "geometry-query")
 STATIONS = {b"Bondville", b"Fort Peck", b"Desert Rock"}
 LOCATION = re.compile(rb"[ \t]*[+-]?\d{1,2}\.\d+[ \t]+[+-]?\d{1,3}\.\d+[ \t]+-?\d+[ \t]+m[ \t]+version 1[ \t]*")
@@ -44,6 +45,8 @@ def restore(frame):
         return transport.unpack_bytes(frame)
     if tag == b"SXD1":
         return step_delta.unpack(frame)
+    if tag == step_delta_v2.MAGIC:
+        return step_delta_v2.unpack(frame)
     if tag == solar_codec.MAGIC:
         return solar_codec.decode(frame)
     if tag == b"GX01":
@@ -57,6 +60,8 @@ def describe(frame, original):
         method = transport.metadata(frame)["method"]
     elif tag == b"SXD1":
         method = "step-delta+xz6"
+    elif tag == step_delta_v2.MAGIC:
+        method = step_delta_v2.profile_name(frame)
     else:
         method_id = solar_codec.HEADER.unpack_from(frame)[1]
         method = next(k for k, v in solar_codec.METHODS.items() if v == method_id)
@@ -64,32 +69,40 @@ def describe(frame, original):
                 wire_bytes=len(frame), sha256=hashlib.sha256(original).hexdigest(), verified=True)
 
 
-def select(raw, with_brotli):
+def select(raw, with_brotli=False):
     best = transport.pack_bytes(raw)
     sizes = {"CNF1": len(best)}
     notes = []
+
     def consider(key, candidate):
         nonlocal best
         sizes[key] = len(candidate)
         if len(candidate) < len(best):
-            if restore(candidate) != raw:
-                raise ValueError(f"{key} failed trial reconstruction")
             best = candidate
+
+    def optional_brotli(key, make_frame):
+        if not shutil.which("brotli"):
+            notes.append("Brotli CLI unavailable; compared portable profiles.")
+            return
+        try:
+            candidate = make_frame()
+        except (ValueError, OSError) as exc:
+            notes.append(f"Skipped optional Brotli trial: {exc}")
+            return
+        consider(key, candidate)
 
     if len(raw) <= step_delta.LIMIT and raw.lstrip().startswith(b"ISO-10303-21;"):
         if b"\x1e" not in raw and b"\x1f" not in raw:
             consider("SXD1", step_delta.pack(raw))
+        if step_delta_v2.eligible(raw):
+            for profile in ("split-tuned", "dual-floats-tuned"):
+                consider("SXD2-" + profile, step_delta_v2.pack(raw, profile))
+            if with_brotli:
+                optional_brotli("SXD2-split-brotli", lambda: step_delta_v2.pack(raw, "split-brotli"))
     elif is_solar(raw):
         consider("SRT2-xz", solar_codec.encode(raw, "xz"))
         if with_brotli:
-            if shutil.which("brotli"):
-                try:
-                    candidate = solar_codec.encode(raw, "brotli")
-                    consider("SRT2-brotli", candidate)
-                except (ValueError, OSError) as exc:
-                    notes.append(f"Skipped optional Brotli trial: {exc}")
-            else:
-                notes.append("Brotli CLI unavailable; compared portable profiles.")
+            optional_brotli("SRT2-brotli", lambda: solar_codec.encode(raw, "brotli"))
     if restore(best) != raw:
         raise ValueError("selected frame failed source verification")
     return best, sizes, notes
@@ -112,7 +125,7 @@ def main(argv=None):
         sub.add_argument("output", type=Path)
         sub.add_argument("--force", action="store_true", help="replace an existing output after verification")
     pack.add_argument("--with-brotli", action="store_true",
-                      help="include the optional Brotli solar profile; readers need the Brotli CLI for that profile")
+                      help="include optional STEP or solar Brotli trials; readers need the Brotli CLI if one wins")
     args = parser.parse_args(argv)
     try:
         if args.command == "pack":

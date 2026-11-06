@@ -2,6 +2,7 @@
 import hashlib
 import json
 import os
+import shutil
 import struct
 import subprocess
 import sys
@@ -59,7 +60,10 @@ class Preview(unittest.TestCase):
 
     def test_profiles_and_offline_optional_fallback(self):
         self.assertEqual(self.pack(b"")["format"], "CNF1")
-        self.assertEqual(self.pack(step())["format"], "SXD1")
+        info = self.pack(step())
+        self.assertIn("SXD1", info["candidate_bytes"])
+        self.assertIn("SXD2-dual-floats-tuned", info["candidate_bytes"])
+        self.assertEqual(info["format"], "SXD1")
         self.assertNotIn("SXD1", self.pack(step()+b"\x1f")["candidate_bytes"])
         info = self.pack(solar(), "--with-brotli")
         self.assertEqual(info["format"], "SRT2")
@@ -87,6 +91,7 @@ class Preview(unittest.TestCase):
             length_at, huge, digest_at = {
                 b"CNF1": (5, struct.pack("<Q", 2**32), 13),
                 b"SXD1": (4, struct.pack("<I", 2**26), 8),
+                b"SXD2": (4, struct.pack("<I", 2**26), 8),
                 b"SRT2": (9, struct.pack(">I", 2**32 - 1), 13),
             }[tag]
             wrong_size = bytearray(original_wire)
@@ -99,6 +104,44 @@ class Preview(unittest.TestCase):
                 self.assertEqual((self.dir / "out").read_bytes(), raw)
         self.command("pack", "in", "in", "--force", ok=False)
         self.command("pack", "in", "out", ok=False)
+
+    def test_frozen_v1_frames(self):
+        fixtures = Path(__file__).with_name("v1-frames")
+        for source in sorted(fixtures.glob("*.cn")):
+            with self.subTest(source=source.name):
+                if source.stem.endswith("brotli"):
+                    self.command("unpack", str(source), "out", "--force", ok=False)
+                    if not shutil.which("brotli"):
+                        continue
+                    self.env["PATH"] = os.environ["PATH"]
+                self.command("unpack", str(source), "out", "--force")
+                self.assertEqual((self.dir / "out").read_bytes(), source.with_suffix(".orig").read_bytes())
+
+    def test_sxd2_profiles(self):
+        sys.path.insert(0, str(APP))
+        try:
+            import step_delta_v2 as codec
+        finally:
+            sys.path.pop(0)
+        raw = (b"ISO-10303-21;\r\n#123  =ENTITY(#+0001,#002,-1.234E+04,#6,0.000);"
+               b"/* '#123' */\r\n#999999999=I(#0,#0);")
+        for profile in codec.PROFILES:
+            if profile == "split-brotli" and not shutil.which("brotli"):
+                continue
+            with self.subTest(profile=profile):
+                frame = codec.pack(raw, profile)
+                wire = self.dir / "wire"
+                wire.write_bytes(frame)
+                if profile == "split-brotli":
+                    self.command("unpack", "wire", "out", "--force", ok=False)
+                    self.env["PATH"] = os.environ["PATH"]
+                self.assertEqual(self.command("inspect", "wire")["method"], profile)
+                self.command("unpack", "wire", "out", "--force")
+                self.assertEqual((self.dir / "out").read_bytes(), raw)
+                for bad in (frame[:-1], frame+b"extra", frame[:40]+b"\xff"+frame[41:]):
+                    wire.write_bytes(bad)
+                    self.command("unpack", "wire", "out", "--force", ok=False)
+                    self.assertEqual((self.dir / "out").read_bytes(), raw)
 
     def test_geometry_stays_explicit(self):
         (self.dir / "geo").write_text("B00,B01,B10,B11,d,bx,by\n2,0,0,2,1,0,0\n")

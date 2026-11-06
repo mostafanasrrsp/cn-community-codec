@@ -1,0 +1,2 @@
+# Preserve the byte-exact legacy archives and originals, including CRLF.
+preview/v1-frames/* binary

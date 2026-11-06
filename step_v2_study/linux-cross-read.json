@@ -1,0 +1,311 @@
+{
+  "os": "Linux-6.12.115-0-virt-aarch64-with",
+  "python": "3.13.13",
+  "zipapp_sha256": "1b0abbafa95ef49149b8cfc55d35138e053aadca5b01d75fcaed851d618ef1e3",
+  "files": [
+    {
+      "file": "A1_RECT_cassette.step",
+      "sha256": "7de6e6b1e8d5bb89e884afc1b038f952185ffc6b32eb2c9d8cb4214b1c1d860d",
+      "frames": {
+        "v1": {
+          "wire_sha256": "c86c7c4c606f54232623c5e36879310c6db3d6cde8a3af4632323aa3377eb453",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "fe5957cc5d6a7aa2bde25bdb032939ccd3cd5bcfff2447ba3317184822e235b7",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "3557d94cd82de5b6e5dd8651a559e63ebd5c1874bd1806e2372325088d25afd1",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "A1_SQ_cassette.step",
+      "sha256": "4d8c8cf847ef4f0f75e3bf9d096f8a12e54dd56b4078430b0ba3ebd3faa55527",
+      "frames": {
+        "v1": {
+          "wire_sha256": "8843219077e327ad295f18230db129e67a325f67f1079a65ed43211f66e6ac1a",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "188df62c0e3db33987a87abc85a967056cc1ec561cef4a6a9c9828830fff0076",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "134a5d9631d26d2896afdc35fa11ea025d4af580fef93600bdc9b0b39b0bfdd7",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "A2_DARK_reference.step",
+      "sha256": "869c1635badddc3a8cdac2878d6746515b094284b0cb1ef40db4d52115df09bf",
+      "frames": {
+        "v1": {
+          "wire_sha256": "3264497572938045e1e24c80b2ac45489a79e216e1669b7df4525fa715d2aea9",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "8a11ad7d72dc84432354bbbeea20d0635aa4e0c134642a0391c22795b1ecbc4b",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "1e3b8acfc321325cf07637b76da9d3d2d30536fb95b469975a0d1685f930e3eb",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "A2_RECT_reference.step",
+      "sha256": "b53ed19490fd7b2ae52e6292b4ea8f410fc69ddcb0802ef6a2f93d0b93a1ed6a",
+      "frames": {
+        "v1": {
+          "wire_sha256": "bde8946b94eea3e7c0acb027ac31a78b9e2a5940aa0695873f33df6530cc3822",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "3ffef94ee847a8bcbfa2c755946e7d6f4d012acd38cbe245dbfbd3a64937d97e",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "99ad221da79157ab7b2a15c0185c252bf6ae46c31ed349a72e8d8a9c987b2000",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "A2_SQ_reference.step",
+      "sha256": "9e278b3d4356a7c2492cbf0e473c387c3eaf0400141e3d5840468f76e8c96179",
+      "frames": {
+        "v1": {
+          "wire_sha256": "657f9dd9b21f1992b5e534baa446f402f09a88574450e24f24659fdc841006aa",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "3a9ead8925f0d223d83deaf55da161ce0215514acec339d32086972b82c1358d",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "e3c13785084230542d039c981a84ab76e93791a6932108e2ad6cc2367556c3d0",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "A3_installed_fixture.step",
+      "sha256": "fe3883e55903ca04ffc929f3ed723d9d4f26121260ab48b2e9253f61460b910b",
+      "frames": {
+        "v1": {
+          "wire_sha256": "4239b56ca7de83f5b9005991e8d39d260f95b435263f9a14819fbb77a1906185",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "c0997fdbafecd336b6978fac6fdb1960e4fb1c58d69d9fa9a9a6520ccffc5682",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "765e189948432dce671ce0b439883a3c0a2e1369dd5809ef0bf0190605789caf",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_ctc_01_asme1_ap242-e1.stp",
+      "sha256": "85a5752da05f53c456ca3a9e038c90358e1d5a3141d1f0d6e5f0970f2356e821",
+      "frames": {
+        "v1": {
+          "wire_sha256": "399a8febc90e57bbc1e7855fd252c874f6b3b9f67f43abb26365ea4deca8d74a",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "f1c4694358ea29a8b3e5d43d688a5ce41e55d82eda3088e498e362ca1b5dd11f",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "f1c4694358ea29a8b3e5d43d688a5ce41e55d82eda3088e498e362ca1b5dd11f",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_ctc_02_asme1_ap242-e2.stp",
+      "sha256": "99a0a2079ddeb64d05c2432cbe931fa17c89da60d8b0bcb0b11bd0ed94fa2e68",
+      "frames": {
+        "v1": {
+          "wire_sha256": "7b37007a8b2bd8b7870fe537f88e3d685b6dd872f18aa74c17f887670bd536a1",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "42a3af0a7d94fb6e0fd8bbd21d3b6e15685e8b21f1846eb00e7a41cdc1bd1d04",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "42a3af0a7d94fb6e0fd8bbd21d3b6e15685e8b21f1846eb00e7a41cdc1bd1d04",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_ftc_08_asme1_ap242-e1-tg.stp",
+      "sha256": "841a9ac51a32fe25b872f283b0b8770c77fee4e34adc8499f88a6e1bafd8e578",
+      "frames": {
+        "v1": {
+          "wire_sha256": "139060b999ddcd4f6f6f3e1175c129a92796371c139279a861674683270361f2",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "7d6aa14ef0691225e21c1bd0f2d3e10f901ba64a01be759976ebcc213cd2006d",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "7d6aa14ef0691225e21c1bd0f2d3e10f901ba64a01be759976ebcc213cd2006d",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_ftc_08_asme1_ap242-e2.stp",
+      "sha256": "7b9283b4288d152fd181d76c39285d7c79fbba34fda1e14a41ac4a983f6d68b3",
+      "frames": {
+        "v1": {
+          "wire_sha256": "6a93a597bc31c56f3577de5bf437ed2500628e49628aa9335b1f7b5ee01ae3f7",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "1a8f36ca56d5218041622975f4a4c842f0f68720d9fb2a1d2d3a739f307d178f",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "1a8f36ca56d5218041622975f4a4c842f0f68720d9fb2a1d2d3a739f307d178f",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_stc_06_asme1_ap242-e3.stp",
+      "sha256": "71777c28da76da0e8a667e4cbe792d5f72c09b5c56440c9744d3d50ca96ecc8d",
+      "frames": {
+        "v1": {
+          "wire_sha256": "f61baffa593e163ed5f921335b08ad43cacc69d59220e596518f4183aa8e9326",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "e28a0dc27785da590a332cf33886fc969d76eebe313135509a7b4ab6935ac1be",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "e28a0dc27785da590a332cf33886fc969d76eebe313135509a7b4ab6935ac1be",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "MBDTest01_1.step",
+      "sha256": "a228e4fbb2f9764464e3b93be926aff8d2b145ded046a6e0e17e5cf6e2e056e2",
+      "frames": {
+        "v1": {
+          "wire_sha256": "236f5e63923bbe2c02dd10cb6d45e3f36a11b1bb32f5ddf56064c3de30bb6299",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "cde5798855fa4fb13efd21569c92e774071a2133e8f5401abc77688109e5ce29",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "d5aa7bed25eb1cc87b2d5009fe7af5d04d1c07875ea9a34656ef7783f845214e",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_ctc_03_asme1_ap242-e2.stp",
+      "sha256": "196b665776e759282f80fc8fb27d7bceb995df77cf78b7ce48347535a4d6cb5f",
+      "frames": {
+        "v1": {
+          "wire_sha256": "d4582c990122d467f4ee6340ebda114c921515321c2e35ea2f0448de1eb224cc",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "7106667dde2f1b9e66e501d28f8b544bb283265b53e4bf6eccfb1c0ed16cde7a",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "7106667dde2f1b9e66e501d28f8b544bb283265b53e4bf6eccfb1c0ed16cde7a",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_ftc_06_asme1_ap242-e2.stp",
+      "sha256": "b87afb7f25adc0d44d12e182209d50f0b085b533c0742fb8ffd58f4c87403447",
+      "frames": {
+        "v1": {
+          "wire_sha256": "8a6931c66ae63b186013a3cf45930702bd9c0748a808672a24feaf7400cbc825",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "b0379e788c76cb8d1c4e9a1355520dab4c66d29f9deee11e49f61d538f7c3e1e",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "b0379e788c76cb8d1c4e9a1355520dab4c66d29f9deee11e49f61d538f7c3e1e",
+          "exact": true
+        }
+      }
+    },
+    {
+      "file": "nist_stc_10_asme1_ap242-e2.stp",
+      "sha256": "fba4f46cab1ce1402362038036884631b4a41afe1c9efc5681d358c39db7ed5f",
+      "frames": {
+        "v1": {
+          "wire_sha256": "2bb37375365649aae8cf63aac955dac04766dbdd00dd46e2c3b8bbb384f4d3a8",
+          "exact": true
+        },
+        "default": {
+          "wire_sha256": "ffbf760e3b57c7e67767eb09dc120c0ff276a347771db75d847087b5e59f4b7a",
+          "exact": true
+        },
+        "compact": {
+          "wire_sha256": "ffbf760e3b57c7e67767eb09dc120c0ff276a347771db75d847087b5e59f4b7a",
+          "exact": true
+        }
+      }
+    }
+  ],
+  "host": "macOS-27.3-arm64-arm-64bit",
+  "linux_brotli": "1.1.1-r0 via Alpine 3.22 main/aarch64",
+  "mac_brotli": "brotli 1.2.1",
+  "return_to_mac": [
+    {
+      "file": "A2_DARK_reference.step",
+      "variant": "default",
+      "method": "split-tuned",
+      "wire_sha256": "8a11ad7d72dc84432354bbbeea20d0635aa4e0c134642a0391c22795b1ecbc4b",
+      "original_sha256": "869c1635badddc3a8cdac2878d6746515b094284b0cb1ef40db4d52115df09bf",
+      "bytes": 4601,
+      "exact": true
+    },
+    {
+      "file": "A1_RECT_cassette.step",
+      "variant": "default",
+      "method": "dual-floats-tuned",
+      "wire_sha256": "fe5957cc5d6a7aa2bde25bdb032939ccd3cd5bcfff2447ba3317184822e235b7",
+      "original_sha256": "7de6e6b1e8d5bb89e884afc1b038f952185ffc6b32eb2c9d8cb4214b1c1d860d",
+      "bytes": 3393,
+      "exact": true
+    },
+    {
+      "file": "A1_RECT_cassette.step",
+      "variant": "compact",
+      "method": "split-brotli",
+      "wire_sha256": "3557d94cd82de5b6e5dd8651a559e63ebd5c1874bd1806e2372325088d25afd1",
+      "original_sha256": "7de6e6b1e8d5bb89e884afc1b038f952185ffc6b32eb2c9d8cb4214b1c1d860d",
+      "bytes": 3267,
+      "exact": true
+    }
+  ],
+  "mac_to_linux_frames_verified": 45,
+  "linux_to_mac_frames_verified": 3
+}

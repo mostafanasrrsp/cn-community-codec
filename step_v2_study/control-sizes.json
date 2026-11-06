@@ -1,0 +1,152 @@
+{
+  "A1_RECT_cassette.step": {
+    "stpz-deflate6": 26283,
+    "stpz-deflate9": 25222,
+    "gzip9": 25100,
+    "bzip2-9": 18864,
+    "zstd19": 17007,
+    "brotli11": 14298,
+    "xz6": 15448,
+    "xz9": 15448
+  },
+  "A1_SQ_cassette.step": {
+    "stpz-deflate6": 26278,
+    "stpz-deflate9": 25213,
+    "gzip9": 25095,
+    "bzip2-9": 18866,
+    "zstd19": 17012,
+    "brotli11": 14329,
+    "xz6": 15276,
+    "xz9": 15276
+  },
+  "A2_DARK_reference.step": {
+    "stpz-deflate6": 21167,
+    "stpz-deflate9": 20250,
+    "gzip9": 20126,
+    "bzip2-9": 15526,
+    "zstd19": 14005,
+    "brotli11": 12441,
+    "xz6": 13228,
+    "xz9": 13228
+  },
+  "A2_RECT_reference.step": {
+    "stpz-deflate6": 23704,
+    "stpz-deflate9": 22698,
+    "gzip9": 22574,
+    "bzip2-9": 17266,
+    "zstd19": 15820,
+    "brotli11": 13920,
+    "xz6": 14748,
+    "xz9": 14748
+  },
+  "A2_SQ_reference.step": {
+    "stpz-deflate6": 23702,
+    "stpz-deflate9": 22694,
+    "gzip9": 22574,
+    "bzip2-9": 17197,
+    "zstd19": 15818,
+    "brotli11": 13914,
+    "xz6": 14704,
+    "xz9": 14704
+  },
+  "A3_installed_fixture.step": {
+    "stpz-deflate6": 53253,
+    "stpz-deflate9": 50763,
+    "gzip9": 50633,
+    "bzip2-9": 39494,
+    "zstd19": 34500,
+    "brotli11": 30031,
+    "xz6": 32028,
+    "xz9": 32028
+  },
+  "nist_ctc_01_asme1_ap242-e1.stp": {
+    "stpz-deflate6": 88457,
+    "stpz-deflate9": 86880,
+    "gzip9": 86740,
+    "bzip2-9": 83398,
+    "zstd19": 65070,
+    "brotli11": 60794,
+    "xz6": 58300,
+    "xz9": 58300
+  },
+  "nist_ctc_02_asme1_ap242-e2.stp": {
+    "stpz-deflate6": 445216,
+    "stpz-deflate9": 435887,
+    "gzip9": 435747,
+    "bzip2-9": 412167,
+    "zstd19": 297515,
+    "brotli11": 276785,
+    "xz6": 264552,
+    "xz9": 264552
+  },
+  "nist_ftc_08_asme1_ap242-e1-tg.stp": {
+    "stpz-deflate6": 508583,
+    "stpz-deflate9": 497936,
+    "gzip9": 497790,
+    "bzip2-9": 457231,
+    "zstd19": 365977,
+    "brotli11": 345773,
+    "xz6": 343100,
+    "xz9": 343100
+  },
+  "nist_ftc_08_asme1_ap242-e2.stp": {
+    "stpz-deflate6": 1470029,
+    "stpz-deflate9": 1467600,
+    "gzip9": 1467460,
+    "bzip2-9": 1435094,
+    "zstd19": 1109245,
+    "brotli11": 1031056,
+    "xz6": 1016780,
+    "xz9": 1016780
+  },
+  "nist_stc_06_asme1_ap242-e3.stp": {
+    "stpz-deflate6": 234902,
+    "stpz-deflate9": 228663,
+    "gzip9": 228523,
+    "bzip2-9": 213044,
+    "zstd19": 168192,
+    "brotli11": 155173,
+    "xz6": 157148,
+    "xz9": 157148
+  },
+  "MBDTest01_1.step": {
+    "stpz-deflate6": 12838,
+    "stpz-deflate9": 12260,
+    "gzip9": 12148,
+    "bzip2-9": 9597,
+    "zstd19": 9316,
+    "brotli11": 8190,
+    "xz6": 8728,
+    "xz9": 8728
+  },
+  "nist_ctc_03_asme1_ap242-e2.stp": {
+    "stpz-deflate6": 143425,
+    "stpz-deflate9": 140404,
+    "gzip9": 140264,
+    "bzip2-9": 134342,
+    "zstd19": 104310,
+    "brotli11": 98879,
+    "xz6": 93816,
+    "xz9": 93816
+  },
+  "nist_ftc_06_asme1_ap242-e2.stp": {
+    "stpz-deflate6": 435419,
+    "stpz-deflate9": 428042,
+    "gzip9": 427902,
+    "bzip2-9": 413144,
+    "zstd19": 315300,
+    "brotli11": 298457,
+    "xz6": 288492,
+    "xz9": 288492
+  },
+  "nist_stc_10_asme1_ap242-e2.stp": {
+    "stpz-deflate6": 1528264,
+    "stpz-deflate9": 1524876,
+    "gzip9": 1524736,
+    "bzip2-9": 1443286,
+    "zstd19": 1162188,
+    "brotli11": 1081832,
+    "xz6": 1074692,
+    "xz9": 1074692
+  }
+}

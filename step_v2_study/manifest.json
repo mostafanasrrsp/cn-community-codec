@@ -1,0 +1,137 @@
+{
+  "archives": {
+    "f1": {
+      "url": "https://corridornumerics.com/open-bench/Open-Aperture-F1-M01.zip",
+      "sha256": "955f4a5171a167ef349c197c54125bee511ce9ba6f1bdf4c7a2b6a94c041a411"
+    },
+    "nist": {
+      "url": "https://www.nist.gov/system/files/documents/noindex/2024/06/19/NIST-PMI-STEP-Files.zip",
+      "sha256": "8fa78429e6d8d9b0d7681d223b6aa9ec98c3772185c55b1a0e3679b21c181911"
+    }
+  },
+  "v1": {
+    "url": "https://github.com/mostafanasrrsp/cn-community-codec/releases/download/v0.1.0-preview/cn-preview.pyz",
+    "sha256": "8acaffdebaea3d8a787c104ada13e2fc6981b70c9f0e31cb8bcbc0a2544377fe"
+  },
+  "files": [
+    {
+      "file": "A1_RECT_cassette.step",
+      "group": "F1",
+      "input_bytes": 142986,
+      "sha256": "7de6e6b1e8d5bb89e884afc1b038f952185ffc6b32eb2c9d8cb4214b1c1d860d",
+      "archive": "f1",
+      "member": "Open-Aperture-F1-M01/hardware/A1_RECT_cassette.step"
+    },
+    {
+      "file": "A1_SQ_cassette.step",
+      "group": "F1",
+      "input_bytes": 142870,
+      "sha256": "4d8c8cf847ef4f0f75e3bf9d096f8a12e54dd56b4078430b0ba3ebd3faa55527",
+      "archive": "f1",
+      "member": "Open-Aperture-F1-M01/hardware/A1_SQ_cassette.step"
+    },
+    {
+      "file": "A2_DARK_reference.step",
+      "group": "F1",
+      "input_bytes": 113091,
+      "sha256": "869c1635badddc3a8cdac2878d6746515b094284b0cb1ef40db4d52115df09bf",
+      "archive": "f1",
+      "member": "Open-Aperture-F1-M01/hardware/A2_DARK_reference.step"
+    },
+    {
+      "file": "A2_RECT_reference.step",
+      "group": "F1",
+      "input_bytes": 128572,
+      "sha256": "b53ed19490fd7b2ae52e6292b4ea8f410fc69ddcb0802ef6a2f93d0b93a1ed6a",
+      "archive": "f1",
+      "member": "Open-Aperture-F1-M01/hardware/A2_RECT_reference.step"
+    },
+    {
+      "file": "A2_SQ_reference.step",
+      "group": "F1",
+      "input_bytes": 128567,
+      "sha256": "9e278b3d4356a7c2492cbf0e473c387c3eaf0400141e3d5840468f76e8c96179",
+      "archive": "f1",
+      "member": "Open-Aperture-F1-M01/hardware/A2_SQ_reference.step"
+    },
+    {
+      "file": "A3_installed_fixture.step",
+      "group": "F1",
+      "input_bytes": 297618,
+      "sha256": "fe3883e55903ca04ffc929f3ed723d9d4f26121260ab48b2e9253f61460b910b",
+      "archive": "f1",
+      "member": "Open-Aperture-F1-M01/hardware/A3_installed_fixture.step"
+    },
+    {
+      "file": "nist_ctc_01_asme1_ap242-e1.stp",
+      "group": "AP242",
+      "input_bytes": 396445,
+      "sha256": "85a5752da05f53c456ca3a9e038c90358e1d5a3141d1f0d6e5f0970f2356e821",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ctc_01_asme1_ap242-e1.stp"
+    },
+    {
+      "file": "nist_ctc_02_asme1_ap242-e2.stp",
+      "group": "AP242",
+      "input_bytes": 1981342,
+      "sha256": "99a0a2079ddeb64d05c2432cbe931fa17c89da60d8b0bcb0b11bd0ed94fa2e68",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ctc_02_asme1_ap242-e2.stp"
+    },
+    {
+      "file": "nist_ftc_08_asme1_ap242-e1-tg.stp",
+      "group": "AP242",
+      "input_bytes": 2120356,
+      "sha256": "841a9ac51a32fe25b872f283b0b8770c77fee4e34adc8499f88a6e1bafd8e578",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ftc_08_asme1_ap242-e1-tg.stp"
+    },
+    {
+      "file": "nist_ftc_08_asme1_ap242-e2.stp",
+      "group": "AP242",
+      "input_bytes": 4722264,
+      "sha256": "7b9283b4288d152fd181d76c39285d7c79fbba34fda1e14a41ac4a983f6d68b3",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ftc_08_asme1_ap242-e2.stp"
+    },
+    {
+      "file": "nist_stc_06_asme1_ap242-e3.stp",
+      "group": "AP242",
+      "input_bytes": 1006401,
+      "sha256": "71777c28da76da0e8a667e4cbe792d5f72c09b5c56440c9744d3d50ca96ecc8d",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_stc_06_asme1_ap242-e3.stp"
+    },
+    {
+      "file": "MBDTest01_1.step",
+      "group": "AP242",
+      "input_bytes": 65732,
+      "sha256": "a228e4fbb2f9764464e3b93be926aff8d2b145ded046a6e0e17e5cf6e2e056e2",
+      "url": "https://raw.githubusercontent.com/ChipsWoodShop/FreeCAD-MBDWorkbench/5055b13c0ba0ce72992e43556bf279bc61c411e2/tests/MBDTest01_1.step"
+    },
+    {
+      "file": "nist_ctc_03_asme1_ap242-e2.stp",
+      "group": "fresh",
+      "input_bytes": 673846,
+      "sha256": "196b665776e759282f80fc8fb27d7bceb995df77cf78b7ce48347535a4d6cb5f",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ctc_03_asme1_ap242-e2.stp"
+    },
+    {
+      "file": "nist_ftc_06_asme1_ap242-e2.stp",
+      "group": "fresh",
+      "input_bytes": 1971192,
+      "sha256": "b87afb7f25adc0d44d12e182209d50f0b085b533c0742fb8ffd58f4c87403447",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ftc_06_asme1_ap242-e2.stp"
+    },
+    {
+      "file": "nist_stc_10_asme1_ap242-e2.stp",
+      "group": "fresh",
+      "input_bytes": 4875056,
+      "sha256": "fba4f46cab1ce1402362038036884631b4a41afe1c9efc5681d358c39db7ed5f",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_stc_10_asme1_ap242-e2.stp"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ sources.update({
     "preview_cli.py": (here / "preview_cli.py").read_bytes(),
     "solar_codec.py": (lab / "solar_study" / "solar_codec.py").read_bytes(),
     "step_delta.py": (lab / "file_study" / "step_delta.py").read_bytes(),
+    "step_delta_v2.py": (lab / "file_study" / "step_delta_v2.py").read_bytes(),
     "LICENSE": (codec / "LICENSE").read_bytes(),
     "__main__.py": b"from preview_cli import main\nraise SystemExit(main())\n",
 })
@@ -22,3 +23,6 @@ with zipfile.ZipFile(app, "w") as archive:
         archive.writestr(entry, data, compress_type=zipfile.ZIP_DEFLATED)
 digest = hashlib.sha256(app.read_bytes()).hexdigest()
 (here / "SHA256SUMS").write_text(f"{digest}  {app.name}\n", encoding="ascii")
+
+# The root executable is the entry point documented in the release kit.
+(lab / app.name).write_bytes(app.read_bytes())

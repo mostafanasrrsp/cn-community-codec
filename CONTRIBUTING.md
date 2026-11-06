@@ -18,4 +18,4 @@ python3 preview/test_preview.py
 (cd community_codec && python3 -m unittest discover -s tests)
 ```
 
-The builder writes the executable to `preview/cn-preview.pyz`. Keep the root executable as the shipped preview for comparisons. Changes to a wire format should include a description, an example frame, a corruption case and the expected behavior with earlier versions. For a new compression method, include an existing approach as a control and reproduce a byte-for-byte restore.
+The builder writes identical copies to `cn-preview.pyz` and `preview/cn-preview.pyz`. Release comparisons use the root copy. Changes to a wire format should include a description, an example frame, a corruption case and the expected behavior with earlier versions. For a new compression method, include an existing approach as a control and reproduce a byte-for-byte restore.

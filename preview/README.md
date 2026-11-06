@@ -14,11 +14,11 @@ A silent `cmp` means the file contents match exactly. Replace the names in the e
 | What you give it | What it tries |
 | --- | --- |
 | One ordinary file up to 64 MiB | Original bytes, DEFLATE, bzip2 and XZ in an integrity-checked CNF1 frame. |
-| STEP Part 21 text up to 8 MiB | Also tries separating entity-reference differences before XZ (SXD1). |
+| STEP Part 21 text up to 8 MiB | Also tries SXD1 and the two portable SXD2 profiles, which split entity references and optionally group original decimal tokens before XZ. |
 | Matching fixed-row NOAA SURFRAD v1 data up to 8 MiB | Also tries grouping equivalent byte columns before XZ (SRT2). The auto-detector currently recognizes Bondville, Fort Peck and Desert Rock. |
 | An already compressed file | Uses the smaller of the eligible complete frames. The raw fallback can grow the original by 45 bytes. |
 
-You can explicitly add `--with-brotli` to the pack command to try one more SRT2 method on eligible solar data. Both sender and receiver need a working Brotli command-line tool for a resulting Brotli frame. With the default options, the recipient only needs Python. Candidate selection entails extra encoding work; the program reads one regular file into memory. Keep permissions, extended attributes and directory structure separately. SHA-256 verifies file contents. To verify the downloaded program against a trusted copy of the included digest, run `shasum -a 256 -c SHA256SUMS`.
+You can explicitly add `--with-brotli` to the pack command to try another method on eligible solar and STEP data. Both sender and receiver need a working Brotli command-line tool for a resulting Brotli frame. With the default options, the recipient only needs Python. Candidate selection entails extra encoding work; the program reads one regular file into memory. Keep permissions, extended attributes and directory structure separately. SHA-256 verifies file contents. Verify the full kit with `shasum -a 256 -c SHA256SUMS` in its root, or compare the standalone reader to the digest in the release’s SHA256SUMS.txt.
 
 ## Try the aperture response experiment separately
 
