@@ -25,6 +25,17 @@ The output shows the complete stored size and the original content digest. On ma
 
 Version 0.3 adds a dictionary for repeated decimal spellings in STEP drawings. For example, identical coordinate strings can share one entry while `1.0` and `1.00` retain their different bytes. The encoder compares the new methods with the earlier ones. It checks the winning frame by restoring the original file.
 
+| STEP drawings | Original bytes | .stpZ (DEFLATE-9) | Best of eight | 0.3 default | 0.3 with Brotli |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Four additional drawings | 4,988,119 | 1,015,237 | 649,313 | 451,716 | 444,905 |
+| Fifteen development drawings | 18,766,338 | 4,989,388 | 3,402,028 | 3,042,023 | 3,033,999 |
+
+With optional Brotli, 0.3 saved **91.08%** of the four additional drawings’ original bytes. Compared with the smallest conventional result for each file, it saved **31.48%**. On the fifteen drawings used in development, those savings were **83.83%** and **10.82%**. Each column sums the stored files, including any headers. The reader is a separate, one-time delivery of 24,700 bytes.
+
+The eight controls are single-file STEP ZIP (.stpZ) with DEFLATE levels 6 and 9, gzip-9, bzip2-9, XZ-6, XZ-9, Zstandard-19 and Brotli-11. The winning method can differ by drawing. [Per-file comparison](step_v3_study/README.md#individual-public-drawings)
+
+**What changed from 0.2?** The table below compares the same encoding mode in each release.
+
 | STEP files | Mode for both versions | v0.2 bytes | v0.3 bytes | Bytes saved |
 | --- | --- | ---: | ---: | ---: |
 | Four additional drawings (three public, one private) | Default | 452,008 | 451,716 | 292 (0.065%) |

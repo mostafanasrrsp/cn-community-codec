@@ -1,0 +1,58 @@
+{
+  "nist_ctc_04_asme1_ap242-e1.stp": {
+    "original_bytes": 1287291,
+    "controls": {
+      "stpz-deflate6": 269317,
+      "stpz-deflate9": 259723,
+      "gzip9": 259583,
+      "bzip2-9": 233326,
+      "zstd19": 176182,
+      "brotli11": 158195,
+      "xz6": 160856,
+      "xz9": 160856
+    },
+    "all_exact": true
+  },
+  "nist_ftc_07_asme1_ap242-e2.stp": {
+    "original_bytes": 1478375,
+    "controls": {
+      "stpz-deflate6": 342018,
+      "stpz-deflate9": 333724,
+      "gzip9": 333584,
+      "bzip2-9": 307616,
+      "zstd19": 238349,
+      "brotli11": 215730,
+      "xz6": 222720,
+      "xz9": 222920
+    },
+    "all_exact": true
+  },
+  "nist_stc_07_asme1_ap242-e3.stp": {
+    "original_bytes": 1945387,
+    "controls": {
+      "stpz-deflate6": 387689,
+      "stpz-deflate9": 376378,
+      "gzip9": 376238,
+      "bzip2-9": 354747,
+      "zstd19": 273266,
+      "brotli11": 248428,
+      "xz6": 250824,
+      "xz9": 250824
+    },
+    "all_exact": true
+  },
+  "Private engineering file": {
+    "original_bytes": 277066,
+    "controls": {
+      "stpz-deflate6": 47644,
+      "stpz-deflate9": 45412,
+      "gzip9": 45270,
+      "bzip2-9": 34545,
+      "zstd19": 30415,
+      "brotli11": 26960,
+      "xz6": 28292,
+      "xz9": 28292
+    },
+    "all_exact": true
+  }
+}
