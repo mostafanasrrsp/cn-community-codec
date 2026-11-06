@@ -1,0 +1,279 @@
+{
+  "environment": {
+    "platform": "macOS-27.3-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.9.6",
+    "zlib": "1.2.12",
+    "zstd": "*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***",
+    "brotli": "brotli 1.2.1"
+  },
+  "transform_frame_header_bytes": 13,
+  "files": [
+    {
+      "file": "bon20115.dat",
+      "split": "development",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/bon/2020/bon20115.dat",
+      "sha256": "aa7206320a5d8e026530fe501a1c52b0af8086d49ff25e22c54a317321fc799e",
+      "source": 345645,
+      "row_shape": [
+        45,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 66430,
+          "transposed": 27894
+        },
+        "bzip2-9": {
+          "stock": 49789,
+          "transposed": 22924
+        },
+        "xz-6": {
+          "stock": 34256,
+          "transposed": 22561
+        },
+        "zstd-3": {
+          "stock": 67274,
+          "transposed": 27210
+        },
+        "zstd-19": {
+          "stock": 42383,
+          "transposed": 22846
+        },
+        "brotli-11": {
+          "stock": 39210,
+          "transposed": 22177
+        }
+      }
+    },
+    {
+      "file": "fpk20032.dat",
+      "split": "holdout",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/fpk/2020/fpk20032.dat",
+      "sha256": "8603e9119747053d39f37816afe80644482db1ce614e0387781548a40e8c5db9",
+      "source": 345645,
+      "row_shape": [
+        45,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 63027,
+          "transposed": 24690
+        },
+        "bzip2-9": {
+          "stock": 45270,
+          "transposed": 20152
+        },
+        "xz-6": {
+          "stock": 31544,
+          "transposed": 20017
+        },
+        "zstd-3": {
+          "stock": 64443,
+          "transposed": 24025
+        },
+        "zstd-19": {
+          "stock": 39008,
+          "transposed": 20318
+        },
+        "brotli-11": {
+          "stock": 36003,
+          "transposed": 19584
+        }
+      }
+    },
+    {
+      "file": "fpk20183.dat",
+      "split": "holdout",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/fpk/2020/fpk20183.dat",
+      "sha256": "cb86d2bde0a4c70ee1e173229161a1e52ce16018de5391bdba6bc5d9d14edb01",
+      "source": 345645,
+      "row_shape": [
+        45,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 72322,
+          "transposed": 28506
+        },
+        "bzip2-9": {
+          "stock": 52706,
+          "transposed": 23335
+        },
+        "xz-6": {
+          "stock": 35404,
+          "transposed": 23121
+        },
+        "zstd-3": {
+          "stock": 73582,
+          "transposed": 27905
+        },
+        "zstd-19": {
+          "stock": 45842,
+          "transposed": 23509
+        },
+        "brotli-11": {
+          "stock": 40561,
+          "transposed": 22766
+        }
+      }
+    },
+    {
+      "file": "fpk20310.dat",
+      "split": "holdout",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/fpk/2020/fpk20310.dat",
+      "sha256": "f39c95c75e012d2329c8d0cf79898cccee6e590760e2a073699a5c6d5d3a50d0",
+      "source": 345645,
+      "row_shape": [
+        45,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 65517,
+          "transposed": 24278
+        },
+        "bzip2-9": {
+          "stock": 47751,
+          "transposed": 20038
+        },
+        "xz-6": {
+          "stock": 31452,
+          "transposed": 19609
+        },
+        "zstd-3": {
+          "stock": 66626,
+          "transposed": 23953
+        },
+        "zstd-19": {
+          "stock": 38476,
+          "transposed": 19923
+        },
+        "brotli-11": {
+          "stock": 35797,
+          "transposed": 19314
+        }
+      }
+    },
+    {
+      "file": "dra20032.dat",
+      "split": "holdout",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/dra/2020/dra20032.dat",
+      "sha256": "03b00876c4110b4a2723cff0f82320c263735cb00f5b780aa8518952d2e2b5bf",
+      "source": 345649,
+      "row_shape": [
+        49,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 69106,
+          "transposed": 26245
+        },
+        "bzip2-9": {
+          "stock": 49913,
+          "transposed": 21773
+        },
+        "xz-6": {
+          "stock": 33664,
+          "transposed": 21325
+        },
+        "zstd-3": {
+          "stock": 71109,
+          "transposed": 25899
+        },
+        "zstd-19": {
+          "stock": 43894,
+          "transposed": 21898
+        },
+        "brotli-11": {
+          "stock": 38441,
+          "transposed": 20989
+        }
+      }
+    },
+    {
+      "file": "dra20183.dat",
+      "split": "holdout",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/dra/2020/dra20183.dat",
+      "sha256": "67bf7e76d341b78b6549e84109e3b6bfbda14b29cb67f2525c25c2a883f69a69",
+      "source": 345649,
+      "row_shape": [
+        49,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 72323,
+          "transposed": 27957
+        },
+        "bzip2-9": {
+          "stock": 53780,
+          "transposed": 23186
+        },
+        "xz-6": {
+          "stock": 34848,
+          "transposed": 22753
+        },
+        "zstd-3": {
+          "stock": 74388,
+          "transposed": 27674
+        },
+        "zstd-19": {
+          "stock": 45164,
+          "transposed": 23304
+        },
+        "brotli-11": {
+          "stock": 40174,
+          "transposed": 22348
+        }
+      }
+    },
+    {
+      "file": "dra20310.dat",
+      "split": "holdout",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/dra/2020/dra20310.dat",
+      "sha256": "dcfba39b632f13d3f87fc621deea6b662b101014617cda1e7b74be24a6375963",
+      "source": 345649,
+      "row_shape": [
+        49,
+        240,
+        1440
+      ],
+      "sizes": {
+        "gzip-6": {
+          "stock": 69435,
+          "transposed": 26873
+        },
+        "bzip2-9": {
+          "stock": 49464,
+          "transposed": 22351
+        },
+        "xz-6": {
+          "stock": 34252,
+          "transposed": 21885
+        },
+        "zstd-3": {
+          "stock": 71184,
+          "transposed": 26638
+        },
+        "zstd-19": {
+          "stock": 41953,
+          "transposed": 22409
+        },
+        "brotli-11": {
+          "stock": 38962,
+          "transposed": 21594
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1797609in",
+    "source": "https://steptools.com/docs/stpfiles/ap203/1797609in.stp",
+    "bytes": 166214,
+    "sha256": "420076d7edd3f626f9b49c5eb126e93245dfdb07e572b771c3bbb84dbd852ae9",
+    "sizes": {
+      "zip-deflate9": 34245,
+      "gzip9": 34149,
+      "bzip2-9": 27921,
+      "zstd19": 24190,
+      "brotli11": 22016,
+      "xz9": 21912,
+      "xz6": 21912,
+      "sxd1-xz6": 11156
+    }
+  },
+  {
+    "id": "2827056",
+    "source": "https://steptools.com/docs/stpfiles/ap203/2827056.stp",
+    "bytes": 392749,
+    "sha256": "3c3ac37f4146e26cad5779e074d54eb46f7f32f424803de8da711155892f1f03",
+    "sizes": {
+      "zip-deflate9": 73450,
+      "gzip9": 73354,
+      "bzip2-9": 59960,
+      "zstd19": 46730,
+      "brotli11": 40719,
+      "xz9": 40408,
+      "xz6": 40408,
+      "sxd1-xz6": 17808
+    }
+  },
+  {
+    "id": "4pinplug",
+    "source": "https://steptools.com/docs/stpfiles/ap203/4pinplug.stp",
+    "bytes": 58246,
+    "sha256": "b4b5c4aa0760377b89bef6b092d4a4fddb30a15c584ff90185f82a71a46ce8ac",
+    "sizes": {
+      "zip-deflate9": 12242,
+      "gzip9": 12146,
+      "bzip2-9": 10476,
+      "zstd19": 9295,
+      "brotli11": 8264,
+      "xz9": 8584,
+      "xz6": 8584,
+      "sxd1-xz6": 4332
+    }
+  },
+  {
+    "id": "53711_74563f01_na",
+    "source": "https://steptools.com/docs/stpfiles/ap203/53711_74563f01_na.stp",
+    "bytes": 54587,
+    "sha256": "412b8f0b3451d3b214f87c616d595c94fd84fb333a5d3bdece087f3395a99e77",
+    "sizes": {
+      "zip-deflate9": 11343,
+      "gzip9": 11247,
+      "bzip2-9": 9178,
+      "zstd19": 8663,
+      "brotli11": 7809,
+      "xz9": 7896,
+      "xz6": 7896,
+      "sxd1-xz6": 4132
+    }
+  },
+  {
+    "id": "angle1",
+    "source": "https://steptools.com/docs/stpfiles/ap203/angle1.stp",
+    "bytes": 21581,
+    "sha256": "41a24b80801ebce7921437d370766f7f33501326baf25b0b49c8c70d40f3775e",
+    "sizes": {
+      "zip-deflate9": 5080,
+      "gzip9": 4984,
+      "bzip2-9": 4435,
+      "zstd19": 3960,
+      "brotli11": 3433,
+      "xz9": 3580,
+      "xz6": 3580,
+      "sxd1-xz6": 2896
+    }
+  },
+  {
+    "id": "as1_pe",
+    "source": "https://steptools.com/docs/stpfiles/ap203/as1_pe.stp",
+    "bytes": 78666,
+    "sha256": "34139ba9867e56cfeef1d128231ddda076218f5e0f1c09830b7dd66a6e0dd35e",
+    "sizes": {
+      "zip-deflate9": 13762,
+      "gzip9": 13666,
+      "bzip2-9": 11346,
+      "zstd19": 9360,
+      "brotli11": 8018,
+      "xz9": 7748,
+      "xz6": 7748,
+      "sxd1-xz6": 5244
+    }
+  }
+]

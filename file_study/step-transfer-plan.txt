@@ -1,0 +1,6 @@
+Keep the SXD1 lexical transformation and XZ level 6 fixed. Transfer check on the
+first six linked models in the STEP Tools AP203 Sample Data table, in publisher
+order. Include all six regardless of result. Score independent full streams,
+byte equality, per-file wins and losses, and aggregate bytes versus the best
+per-file conventional baseline. No retraining or portfolio choice on these files.
+Source: https://steptools.com/docs/stpfiles/ap203/index.html

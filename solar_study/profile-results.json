@@ -1,0 +1,104 @@
+{
+  "srt2_header_bytes": 45,
+  "files": [
+    {
+      "file": "bon20115.dat",
+      "split": "development",
+      "source_bytes": 345645,
+      "strongest_stock": 34256,
+      "brotli": {
+        "frame_bytes": 22209,
+        "frame_sha256": "716f5890ecb25aa015a01805cacb6115404af55becadf8b97b8a0a8761f87da8"
+      },
+      "xz": {
+        "frame_bytes": 22593,
+        "frame_sha256": "08a7a47d0cb910249f56fad65a8f8f5ea09a2aa392ff0584fcac3c92d22a937c"
+      }
+    },
+    {
+      "file": "fpk20032.dat",
+      "split": "holdout",
+      "source_bytes": 345645,
+      "strongest_stock": 31544,
+      "brotli": {
+        "frame_bytes": 19616,
+        "frame_sha256": "3e18f0d276e746222684c5b057bcffbd026be5c25426216cedc376585d146163"
+      },
+      "xz": {
+        "frame_bytes": 20049,
+        "frame_sha256": "9552d2c483bbc4b2fe24e330be0dff83bae1311ad313490bf495a36c1a733237"
+      }
+    },
+    {
+      "file": "fpk20183.dat",
+      "split": "holdout",
+      "source_bytes": 345645,
+      "strongest_stock": 35404,
+      "brotli": {
+        "frame_bytes": 22798,
+        "frame_sha256": "213c5d226f0c71ac0decb32bb6dc1ceda307da0be096f8ac0b670b203c5c3d1d"
+      },
+      "xz": {
+        "frame_bytes": 23153,
+        "frame_sha256": "c6f79250723fb52033dcf492f8a1ee546720684d6ed96267edb999f7258e920e"
+      }
+    },
+    {
+      "file": "fpk20310.dat",
+      "split": "holdout",
+      "source_bytes": 345645,
+      "strongest_stock": 31452,
+      "brotli": {
+        "frame_bytes": 19346,
+        "frame_sha256": "e2be566428b2eb5b9edc4292c9eaa80086f531df1cfa271765a3405a61bb97d8"
+      },
+      "xz": {
+        "frame_bytes": 19641,
+        "frame_sha256": "78ae7a6316df0226f81e7e0c4fbf7ffc010c799c65b399d17a552eddd62a1a17"
+      }
+    },
+    {
+      "file": "dra20032.dat",
+      "split": "holdout",
+      "source_bytes": 345649,
+      "strongest_stock": 33664,
+      "brotli": {
+        "frame_bytes": 21021,
+        "frame_sha256": "9130bcacb225d45958166ca0fdc59f6e90fd5650e9cbe8a067744055d451e6f7"
+      },
+      "xz": {
+        "frame_bytes": 21357,
+        "frame_sha256": "277fbf27ee39345b280ac4b3d5e1e1691a0fb380e6395beac4bd7d5835c7f46c"
+      }
+    },
+    {
+      "file": "dra20183.dat",
+      "split": "holdout",
+      "source_bytes": 345649,
+      "strongest_stock": 34848,
+      "brotli": {
+        "frame_bytes": 22380,
+        "frame_sha256": "d459796507b8328e6f376f058b74825ae11fe2fa2db866facddac0d33d6b83bf"
+      },
+      "xz": {
+        "frame_bytes": 22785,
+        "frame_sha256": "37a210efbaf8cfba73b117d4f6f8838d452ade0d339f479f69101038f97e9a5b"
+      }
+    },
+    {
+      "file": "dra20310.dat",
+      "split": "holdout",
+      "source_bytes": 345649,
+      "strongest_stock": 34252,
+      "brotli": {
+        "frame_bytes": 21626,
+        "frame_sha256": "d7eb1a833ea5b39407bbff413cd71012ea7b66dc34190c09d29c528833933cbf"
+      },
+      "xz": {
+        "frame_bytes": 21917,
+        "frame_sha256": "33c7970580eae1039c1bf6f5aca70bb26881d303893eeba2e8ede61eb5ff8aa4"
+      }
+    }
+  ],
+  "malformed_input_checks": "passed"
+}

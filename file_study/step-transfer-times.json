@@ -1,0 +1,482 @@
+[
+  {
+    "id": "1797609in",
+    "method": "xz6",
+    "repeat": 1,
+    "wire_bytes": 21912,
+    "encode_ms": 24.410042,
+    "decode_ms": 1.149875
+  },
+  {
+    "id": "1797609in",
+    "method": "sxd1",
+    "repeat": 1,
+    "wire_bytes": 11156,
+    "encode_ms": 15.731292,
+    "decode_ms": 10.03
+  },
+  {
+    "id": "1797609in",
+    "method": "sxd1",
+    "repeat": 2,
+    "wire_bytes": 11156,
+    "encode_ms": 16.015875,
+    "decode_ms": 10.083
+  },
+  {
+    "id": "1797609in",
+    "method": "xz6",
+    "repeat": 2,
+    "wire_bytes": 21912,
+    "encode_ms": 23.803917,
+    "decode_ms": 1.181042
+  },
+  {
+    "id": "1797609in",
+    "method": "xz6",
+    "repeat": 3,
+    "wire_bytes": 21912,
+    "encode_ms": 23.735417,
+    "decode_ms": 1.04425
+  },
+  {
+    "id": "1797609in",
+    "method": "sxd1",
+    "repeat": 3,
+    "wire_bytes": 11156,
+    "encode_ms": 16.114459,
+    "decode_ms": 10.429625
+  },
+  {
+    "id": "1797609in",
+    "method": "sxd1",
+    "repeat": 4,
+    "wire_bytes": 11156,
+    "encode_ms": 15.674333,
+    "decode_ms": 10.362375
+  },
+  {
+    "id": "1797609in",
+    "method": "xz6",
+    "repeat": 4,
+    "wire_bytes": 21912,
+    "encode_ms": 24.378916,
+    "decode_ms": 1.1625
+  },
+  {
+    "id": "1797609in",
+    "method": "sxd1",
+    "repeat": 5,
+    "wire_bytes": 11156,
+    "encode_ms": 15.893,
+    "decode_ms": 10.417875
+  },
+  {
+    "id": "1797609in",
+    "method": "xz6",
+    "repeat": 5,
+    "wire_bytes": 21912,
+    "encode_ms": 23.586417,
+    "decode_ms": 1.054375
+  },
+  {
+    "id": "2827056",
+    "method": "xz6",
+    "repeat": 1,
+    "wire_bytes": 40408,
+    "encode_ms": 60.7575,
+    "decode_ms": 2.080083
+  },
+  {
+    "id": "2827056",
+    "method": "sxd1",
+    "repeat": 1,
+    "wire_bytes": 17808,
+    "encode_ms": 32.805125,
+    "decode_ms": 23.405875
+  },
+  {
+    "id": "2827056",
+    "method": "sxd1",
+    "repeat": 2,
+    "wire_bytes": 17808,
+    "encode_ms": 32.412333,
+    "decode_ms": 23.014583
+  },
+  {
+    "id": "2827056",
+    "method": "xz6",
+    "repeat": 2,
+    "wire_bytes": 40408,
+    "encode_ms": 61.269625,
+    "decode_ms": 2.280667
+  },
+  {
+    "id": "2827056",
+    "method": "xz6",
+    "repeat": 3,
+    "wire_bytes": 40408,
+    "encode_ms": 61.685958,
+    "decode_ms": 2.084625
+  },
+  {
+    "id": "2827056",
+    "method": "sxd1",
+    "repeat": 3,
+    "wire_bytes": 17808,
+    "encode_ms": 32.103083,
+    "decode_ms": 23.0075
+  },
+  {
+    "id": "2827056",
+    "method": "sxd1",
+    "repeat": 4,
+    "wire_bytes": 17808,
+    "encode_ms": 32.133834,
+    "decode_ms": 22.810208
+  },
+  {
+    "id": "2827056",
+    "method": "xz6",
+    "repeat": 4,
+    "wire_bytes": 40408,
+    "encode_ms": 61.619666,
+    "decode_ms": 2.294084
+  },
+  {
+    "id": "2827056",
+    "method": "sxd1",
+    "repeat": 5,
+    "wire_bytes": 17808,
+    "encode_ms": 32.357875,
+    "decode_ms": 22.713541
+  },
+  {
+    "id": "2827056",
+    "method": "xz6",
+    "repeat": 5,
+    "wire_bytes": 40408,
+    "encode_ms": 60.8185,
+    "decode_ms": 2.309125
+  },
+  {
+    "id": "4pinplug",
+    "method": "xz6",
+    "repeat": 1,
+    "wire_bytes": 8584,
+    "encode_ms": 10.43825,
+    "decode_ms": 0.617167
+  },
+  {
+    "id": "4pinplug",
+    "method": "sxd1",
+    "repeat": 1,
+    "wire_bytes": 4332,
+    "encode_ms": 7.061709,
+    "decode_ms": 3.852166
+  },
+  {
+    "id": "4pinplug",
+    "method": "sxd1",
+    "repeat": 2,
+    "wire_bytes": 4332,
+    "encode_ms": 6.122292,
+    "decode_ms": 3.752583
+  },
+  {
+    "id": "4pinplug",
+    "method": "xz6",
+    "repeat": 2,
+    "wire_bytes": 8584,
+    "encode_ms": 7.62875,
+    "decode_ms": 0.466333
+  },
+  {
+    "id": "4pinplug",
+    "method": "xz6",
+    "repeat": 3,
+    "wire_bytes": 8584,
+    "encode_ms": 7.019417,
+    "decode_ms": 0.462083
+  },
+  {
+    "id": "4pinplug",
+    "method": "sxd1",
+    "repeat": 3,
+    "wire_bytes": 4332,
+    "encode_ms": 5.514792,
+    "decode_ms": 3.172666
+  },
+  {
+    "id": "4pinplug",
+    "method": "sxd1",
+    "repeat": 4,
+    "wire_bytes": 4332,
+    "encode_ms": 5.322542,
+    "decode_ms": 3.095291
+  },
+  {
+    "id": "4pinplug",
+    "method": "xz6",
+    "repeat": 4,
+    "wire_bytes": 8584,
+    "encode_ms": 7.094583,
+    "decode_ms": 0.455584
+  },
+  {
+    "id": "4pinplug",
+    "method": "sxd1",
+    "repeat": 5,
+    "wire_bytes": 4332,
+    "encode_ms": 5.193209,
+    "decode_ms": 2.861583
+  },
+  {
+    "id": "4pinplug",
+    "method": "xz6",
+    "repeat": 5,
+    "wire_bytes": 8584,
+    "encode_ms": 7.089625,
+    "decode_ms": 0.41025
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "xz6",
+    "repeat": 1,
+    "wire_bytes": 7896,
+    "encode_ms": 11.990417,
+    "decode_ms": 0.583542
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "sxd1",
+    "repeat": 1,
+    "wire_bytes": 4132,
+    "encode_ms": 7.341916,
+    "decode_ms": 3.7405
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "sxd1",
+    "repeat": 2,
+    "wire_bytes": 4132,
+    "encode_ms": 6.355125,
+    "decode_ms": 3.448875
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "xz6",
+    "repeat": 2,
+    "wire_bytes": 7896,
+    "encode_ms": 8.616292,
+    "decode_ms": 0.427958
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "xz6",
+    "repeat": 3,
+    "wire_bytes": 7896,
+    "encode_ms": 8.10175,
+    "decode_ms": 0.413416
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "sxd1",
+    "repeat": 3,
+    "wire_bytes": 4132,
+    "encode_ms": 5.460416,
+    "decode_ms": 2.95225
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "sxd1",
+    "repeat": 4,
+    "wire_bytes": 4132,
+    "encode_ms": 5.53675,
+    "decode_ms": 3.046542
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "xz6",
+    "repeat": 4,
+    "wire_bytes": 7896,
+    "encode_ms": 7.432209,
+    "decode_ms": 0.410583
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "sxd1",
+    "repeat": 5,
+    "wire_bytes": 4132,
+    "encode_ms": 5.311334,
+    "decode_ms": 3.083958
+  },
+  {
+    "id": "53711_74563f01_na",
+    "method": "xz6",
+    "repeat": 5,
+    "wire_bytes": 7896,
+    "encode_ms": 7.31575,
+    "decode_ms": 0.369875
+  },
+  {
+    "id": "angle1",
+    "method": "xz6",
+    "repeat": 1,
+    "wire_bytes": 3580,
+    "encode_ms": 6.560959,
+    "decode_ms": 0.390833
+  },
+  {
+    "id": "angle1",
+    "method": "sxd1",
+    "repeat": 1,
+    "wire_bytes": 2896,
+    "encode_ms": 4.423166,
+    "decode_ms": 2.622792
+  },
+  {
+    "id": "angle1",
+    "method": "sxd1",
+    "repeat": 2,
+    "wire_bytes": 2896,
+    "encode_ms": 3.605334,
+    "decode_ms": 2.338875
+  },
+  {
+    "id": "angle1",
+    "method": "xz6",
+    "repeat": 2,
+    "wire_bytes": 3580,
+    "encode_ms": 3.696083,
+    "decode_ms": 0.286875
+  },
+  {
+    "id": "angle1",
+    "method": "xz6",
+    "repeat": 3,
+    "wire_bytes": 3580,
+    "encode_ms": 3.894916,
+    "decode_ms": 0.250667
+  },
+  {
+    "id": "angle1",
+    "method": "sxd1",
+    "repeat": 3,
+    "wire_bytes": 2896,
+    "encode_ms": 3.143792,
+    "decode_ms": 1.890125
+  },
+  {
+    "id": "angle1",
+    "method": "sxd1",
+    "repeat": 4,
+    "wire_bytes": 2896,
+    "encode_ms": 2.664625,
+    "decode_ms": 1.740625
+  },
+  {
+    "id": "angle1",
+    "method": "xz6",
+    "repeat": 4,
+    "wire_bytes": 3580,
+    "encode_ms": 3.379083,
+    "decode_ms": 0.23
+  },
+  {
+    "id": "angle1",
+    "method": "sxd1",
+    "repeat": 5,
+    "wire_bytes": 2896,
+    "encode_ms": 2.725583,
+    "decode_ms": 1.61075
+  },
+  {
+    "id": "angle1",
+    "method": "xz6",
+    "repeat": 5,
+    "wire_bytes": 3580,
+    "encode_ms": 3.26525,
+    "decode_ms": 0.211167
+  },
+  {
+    "id": "as1_pe",
+    "method": "xz6",
+    "repeat": 1,
+    "wire_bytes": 7748,
+    "encode_ms": 11.753375,
+    "decode_ms": 0.549708
+  },
+  {
+    "id": "as1_pe",
+    "method": "sxd1",
+    "repeat": 1,
+    "wire_bytes": 5244,
+    "encode_ms": 6.762584,
+    "decode_ms": 5.028916
+  },
+  {
+    "id": "as1_pe",
+    "method": "sxd1",
+    "repeat": 2,
+    "wire_bytes": 5244,
+    "encode_ms": 6.225,
+    "decode_ms": 4.742041
+  },
+  {
+    "id": "as1_pe",
+    "method": "xz6",
+    "repeat": 2,
+    "wire_bytes": 7748,
+    "encode_ms": 9.786792,
+    "decode_ms": 0.469125
+  },
+  {
+    "id": "as1_pe",
+    "method": "xz6",
+    "repeat": 3,
+    "wire_bytes": 7748,
+    "encode_ms": 9.321625,
+    "decode_ms": 0.46575
+  },
+  {
+    "id": "as1_pe",
+    "method": "sxd1",
+    "repeat": 3,
+    "wire_bytes": 5244,
+    "encode_ms": 6.307875,
+    "decode_ms": 4.413042
+  },
+  {
+    "id": "as1_pe",
+    "method": "sxd1",
+    "repeat": 4,
+    "wire_bytes": 5244,
+    "encode_ms": 5.513667,
+    "decode_ms": 4.688583
+  },
+  {
+    "id": "as1_pe",
+    "method": "xz6",
+    "repeat": 4,
+    "wire_bytes": 7748,
+    "encode_ms": 9.65475,
+    "decode_ms": 0.420375
+  },
+  {
+    "id": "as1_pe",
+    "method": "sxd1",
+    "repeat": 5,
+    "wire_bytes": 5244,
+    "encode_ms": 5.942709,
+    "decode_ms": 4.865625
+  },
+  {
+    "id": "as1_pe",
+    "method": "xz6",
+    "repeat": 5,
+    "wire_bytes": 7748,
+    "encode_ms": 9.0005,
+    "decode_ms": 0.434333
+  }
+]

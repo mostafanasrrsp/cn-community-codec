@@ -1,0 +1,91 @@
+{
+  "kind": "post-hoc direct-file sensitivity",
+  "versions": {
+    "xz-9e": "xz (XZ Utils) 5.8.4\nliblzma 5.8.4",
+    "zstd-22": "*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***"
+  },
+  "files": [
+    {
+      "file": "fpk20032.dat",
+      "sha256": "8603e9119747053d39f37816afe80644482db1ce614e0387781548a40e8c5db9",
+      "original_best": 31544,
+      "new_controls": {
+        "xz-9e": 31428,
+        "zstd-22": 39008
+      },
+      "eight_arm_best_method": "xz-9e",
+      "eight_arm_best_bytes": 31428,
+      "srt2_brotli": 19616
+    },
+    {
+      "file": "fpk20183.dat",
+      "sha256": "cb86d2bde0a4c70ee1e173229161a1e52ce16018de5391bdba6bc5d9d14edb01",
+      "original_best": 35404,
+      "new_controls": {
+        "xz-9e": 35452,
+        "zstd-22": 45851
+      },
+      "eight_arm_best_method": "xz-6",
+      "eight_arm_best_bytes": 35404,
+      "srt2_brotli": 22798
+    },
+    {
+      "file": "fpk20310.dat",
+      "sha256": "f39c95c75e012d2329c8d0cf79898cccee6e590760e2a073699a5c6d5d3a50d0",
+      "original_best": 31452,
+      "new_controls": {
+        "xz-9e": 31376,
+        "zstd-22": 38476
+      },
+      "eight_arm_best_method": "xz-9e",
+      "eight_arm_best_bytes": 31376,
+      "srt2_brotli": 19346
+    },
+    {
+      "file": "dra20032.dat",
+      "sha256": "03b00876c4110b4a2723cff0f82320c263735cb00f5b780aa8518952d2e2b5bf",
+      "original_best": 33664,
+      "new_controls": {
+        "xz-9e": 33772,
+        "zstd-22": 43894
+      },
+      "eight_arm_best_method": "xz-6",
+      "eight_arm_best_bytes": 33664,
+      "srt2_brotli": 21021
+    },
+    {
+      "file": "dra20183.dat",
+      "sha256": "67bf7e76d341b78b6549e84109e3b6bfbda14b29cb67f2525c25c2a883f69a69",
+      "original_best": 34848,
+      "new_controls": {
+        "xz-9e": 34928,
+        "zstd-22": 45078
+      },
+      "eight_arm_best_method": "xz-6",
+      "eight_arm_best_bytes": 34848,
+      "srt2_brotli": 22380
+    },
+    {
+      "file": "dra20310.dat",
+      "sha256": "dcfba39b632f13d3f87fc621deea6b662b101014617cda1e7b74be24a6375963",
+      "original_best": 34252,
+      "new_controls": {
+        "xz-9e": 34304,
+        "zstd-22": 41930
+      },
+      "eight_arm_best_method": "xz-6",
+      "eight_arm_best_bytes": 34252,
+      "srt2_brotli": 21626
+    }
+  ],
+  "totals": {
+    "original_best": 201164,
+    "eight_arm_best_bytes": 200972,
+    "srt2_brotli": 126787
+  },
+  "extra_setting_totals": {
+    "xz-9e": 201260,
+    "zstd-22": 254237
+  },
+  "srt2_fraction_below_eight_arm_best": 0.3691310232271162
+}

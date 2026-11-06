@@ -1,0 +1,269 @@
+{
+  "artifact_sha256": "8acaffdebaea3d8a787c104ada13e2fc6981b70c9f0e31cb8bcbc0a2544377fe",
+  "rows": [
+    {
+      "format": "SXD1",
+      "method": "step-delta+xz6",
+      "original_bytes": 29088,
+      "wire_bytes": 4328,
+      "sha256": "4a3ed18341aeec3bf1a3ce065dcd97ba5d8b213d4db51a13c9599e1c74efad5b",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 4669,
+        "SXD1": 4328
+      },
+      "id": "external-ap209",
+      "configuration": "portable",
+      "category": "public analysis STEP",
+      "cohort": "mixed",
+      "smallest_measured_stock_frame": 4404
+    },
+    {
+      "format": "SXD1",
+      "method": "step-delta+xz6",
+      "original_bytes": 441968,
+      "wire_bytes": 28720,
+      "sha256": "038be659c54b16c9f3da8d7b2da7b63e3fd8879d3abe5b7826108336a7c0bae9",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 59189,
+        "SXD1": 28720
+      },
+      "id": "external-ap214",
+      "configuration": "portable",
+      "category": "public assembly STEP",
+      "cohort": "mixed",
+      "smallest_measured_stock_frame": 48984
+    },
+    {
+      "format": "CNF1",
+      "method": "zlib",
+      "original_bytes": 1664,
+      "wire_bytes": 641,
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 641
+      },
+      "id": "box",
+      "configuration": "portable",
+      "category": "public GLB",
+      "cohort": "mixed",
+      "smallest_measured_stock_frame": 582
+    },
+    {
+      "format": "CNF1",
+      "method": "xz",
+      "original_bytes": 9564264,
+      "wire_bytes": 9366889,
+      "sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 9366889
+      },
+      "id": "lantern",
+      "configuration": "portable",
+      "category": "public GLB",
+      "cohort": "mixed",
+      "smallest_measured_stock_frame": 9358192
+    },
+    {
+      "format": "SRT2",
+      "method": "xz",
+      "original_bytes": 345645,
+      "wire_bytes": 20049,
+      "sha256": "8603e9119747053d39f37816afe80644482db1ce614e0387781548a40e8c5db9",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 45315,
+        "SRT2-xz": 20049
+      },
+      "id": "fpk20032.dat",
+      "configuration": "portable",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 31544
+    },
+    {
+      "format": "SRT2",
+      "method": "brotli",
+      "original_bytes": 345645,
+      "wire_bytes": 19616,
+      "sha256": "8603e9119747053d39f37816afe80644482db1ce614e0387781548a40e8c5db9",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 45315,
+        "SRT2-xz": 20049,
+        "SRT2-brotli": 19616
+      },
+      "id": "fpk20032.dat",
+      "configuration": "optional-brotli",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 31544
+    },
+    {
+      "format": "SRT2",
+      "method": "xz",
+      "original_bytes": 345645,
+      "wire_bytes": 23153,
+      "sha256": "cb86d2bde0a4c70ee1e173229161a1e52ce16018de5391bdba6bc5d9d14edb01",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 52751,
+        "SRT2-xz": 23153
+      },
+      "id": "fpk20183.dat",
+      "configuration": "portable",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 35404
+    },
+    {
+      "format": "SRT2",
+      "method": "brotli",
+      "original_bytes": 345645,
+      "wire_bytes": 22798,
+      "sha256": "cb86d2bde0a4c70ee1e173229161a1e52ce16018de5391bdba6bc5d9d14edb01",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 52751,
+        "SRT2-xz": 23153,
+        "SRT2-brotli": 22798
+      },
+      "id": "fpk20183.dat",
+      "configuration": "optional-brotli",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 35404
+    },
+    {
+      "format": "SRT2",
+      "method": "xz",
+      "original_bytes": 345645,
+      "wire_bytes": 19641,
+      "sha256": "f39c95c75e012d2329c8d0cf79898cccee6e590760e2a073699a5c6d5d3a50d0",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 47796,
+        "SRT2-xz": 19641
+      },
+      "id": "fpk20310.dat",
+      "configuration": "portable",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 31452
+    },
+    {
+      "format": "SRT2",
+      "method": "brotli",
+      "original_bytes": 345645,
+      "wire_bytes": 19346,
+      "sha256": "f39c95c75e012d2329c8d0cf79898cccee6e590760e2a073699a5c6d5d3a50d0",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 47796,
+        "SRT2-xz": 19641,
+        "SRT2-brotli": 19346
+      },
+      "id": "fpk20310.dat",
+      "configuration": "optional-brotli",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 31452
+    },
+    {
+      "format": "SRT2",
+      "method": "xz",
+      "original_bytes": 345649,
+      "wire_bytes": 21357,
+      "sha256": "03b00876c4110b4a2723cff0f82320c263735cb00f5b780aa8518952d2e2b5bf",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 49958,
+        "SRT2-xz": 21357
+      },
+      "id": "dra20032.dat",
+      "configuration": "portable",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 33664
+    },
+    {
+      "format": "SRT2",
+      "method": "brotli",
+      "original_bytes": 345649,
+      "wire_bytes": 21021,
+      "sha256": "03b00876c4110b4a2723cff0f82320c263735cb00f5b780aa8518952d2e2b5bf",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 49958,
+        "SRT2-xz": 21357,
+        "SRT2-brotli": 21021
+      },
+      "id": "dra20032.dat",
+      "configuration": "optional-brotli",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 33664
+    },
+    {
+      "format": "SRT2",
+      "method": "xz",
+      "original_bytes": 345649,
+      "wire_bytes": 22785,
+      "sha256": "67bf7e76d341b78b6549e84109e3b6bfbda14b29cb67f2525c25c2a883f69a69",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 53825,
+        "SRT2-xz": 22785
+      },
+      "id": "dra20183.dat",
+      "configuration": "portable",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 34848
+    },
+    {
+      "format": "SRT2",
+      "method": "brotli",
+      "original_bytes": 345649,
+      "wire_bytes": 22380,
+      "sha256": "67bf7e76d341b78b6549e84109e3b6bfbda14b29cb67f2525c25c2a883f69a69",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 53825,
+        "SRT2-xz": 22785,
+        "SRT2-brotli": 22380
+      },
+      "id": "dra20183.dat",
+      "configuration": "optional-brotli",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 34848
+    },
+    {
+      "format": "SRT2",
+      "method": "xz",
+      "original_bytes": 345649,
+      "wire_bytes": 21917,
+      "sha256": "dcfba39b632f13d3f87fc621deea6b662b101014617cda1e7b74be24a6375963",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 49509,
+        "SRT2-xz": 21917
+      },
+      "id": "dra20310.dat",
+      "configuration": "portable",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 34252
+    },
+    {
+      "format": "SRT2",
+      "method": "brotli",
+      "original_bytes": 345649,
+      "wire_bytes": 21626,
+      "sha256": "dcfba39b632f13d3f87fc621deea6b662b101014617cda1e7b74be24a6375963",
+      "verified": true,
+      "candidate_bytes": {
+        "CNF1": 49509,
+        "SRT2-xz": 21917,
+        "SRT2-brotli": 21626
+      },
+      "id": "dra20310.dat",
+      "configuration": "optional-brotli",
+      "cohort": "solar-heldout",
+      "smallest_measured_stock_frame": 34252
+    }
+  ]
+}
