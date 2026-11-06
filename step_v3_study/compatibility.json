@@ -1,0 +1,65 @@
+{
+  "release": "v0.3.0-preview",
+  "tested_reader": {
+    "file": "cn-preview.pyz",
+    "reported_version": "0.3.0",
+    "sha256": "26ced6836fc613ddd698a86fc901c908161736be1abeff2fb973398faebaf0cd"
+  },
+  "environments": [
+    {
+      "os": "macOS 27.3",
+      "architecture": "arm64",
+      "python": "3.9.6",
+      "brotli_cli": "brotli 1.2.1"
+    },
+    {
+      "os": "Alpine Linux",
+      "kernel": "6.12.115-0-virt",
+      "architecture": "aarch64",
+      "python": "3.13.13",
+      "brotli_cli": "brotli 1.1.1"
+    }
+  ],
+  "hardware_scope": "macOS host and Linux virtual machine ran on one Apple M3. This measures cross-OS readability on arm64.",
+  "positive_checks_per_os": {
+    "source_files": 15,
+    "originals_manifest": "step_v2_study/manifest.json",
+    "archives_tested": 90,
+    "distinct_archive_sha256": 82,
+    "archived_v0.1_default": 15,
+    "archived_v0.2_default": 15,
+    "archived_v0.2_with_brotli": 15,
+    "independent_pre_release_sxd3_frames": {
+      "dictionary-xz": 15,
+      "dictionary-brotli": 15,
+      "dual-floats-brotli": 15
+    },
+    "success": "Every CLI unpack produced the exact original bytes. Archive and original SHA-256 were checked before unpack. Both systems used the same set of archives. The two v0.2 presets selected identical bytes on eight inputs."
+  },
+  "negative_checks_per_os": {
+    "malformed_frame_invocations": 43,
+    "valid_optional_frames_with_brotli_unavailable": 2,
+    "rejected": 45,
+    "covered": "Headers, truncation, trailing bytes, altered checksums, sizes, dictionary stream and index errors, concatenated XZ, expansion limits and reserved Brotli large-window headers.",
+    "destination": "Every failed unpack --force returned an error and preserved an existing output byte-for-byte."
+  },
+  "other_checks": {
+    "selector_fallback": "With Brotli hidden, optional packing selected dictionary-xz on A1_RECT_cassette.step. Inputs containing the four reserved bytes individually fell back to CNF1 and restored exactly.",
+    "linux_encoded_macos_decoded": {
+      "original": "A1_RECT_cassette.step",
+      "original_sha256": "7de6e6b1e8d5bb89e884afc1b038f952185ffc6b32eb2c9d8cb4214b1c1d860d",
+      "wire_sha256": {
+        "dictionary-xz": "d02c164349528343b2aaaabd170e2053305e694e76db3b4fc689d971c178295a",
+        "dictionary-brotli": "40787f1cf78c2658c4e3f82ac4b64901b478958ab46825404bcb5314f35ddc84",
+        "dual-floats-brotli": "a13259c8aff897bd5384d5459ef5c3d26c7c3c707ee01dac5a295a3b03ab00bf"
+      },
+      "success": "All three Linux-encoded frames were additionally transferred to macOS and restored to the exact original bytes."
+    }
+  },
+  "repeat_public_checks": {
+    "from": "Release repository root, with Python 3 and the brotli executable on PATH to exercise optional profiles.",
+    "reader_sha256_command": "python3 -c \"import hashlib, pathlib; print(hashlib.sha256(pathlib.Path('cn-preview.pyz').read_bytes()).hexdigest())\"",
+    "release_fixture_command": "python3 -m unittest discover -s preview -p 'test*.py'",
+    "fixture_scope": "preview/test_preview.py and preview/test_sxd3.py exercise shipped historical fixtures, corruption handling and optional-method behavior. These runnable regressions are a smaller suite than the two-OS study above."
+  }
+}

@@ -62,7 +62,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input-dir", type=Path, help="use already-downloaded files by their pinned names")
     parser.add_argument("--v1", type=Path, help="path to the pinned published v1 reader")
-    parser.add_argument("--v2", type=Path, default=HERE.parent / "cn-preview.pyz")
+    parser.add_argument("--v2", type=Path, help="path to the pinned published v2 reader")
     parser.add_argument("--group", choices=("F1", "AP242", "fresh"), help="replay only this cohort")
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
@@ -72,11 +72,22 @@ def main():
         parser.error("install the Brotli and Zstandard command-line tools for the full comparison")
     selected = [r for r in PINS["files"] if args.group in (None, r["group"])]
     result = {"python": platform.python_version(), "platform": platform.platform(),
-              "v2_sha256": digest(args.v2.read_bytes()), "files": []}
+              "v2_sha256": PINS["v2"]["sha256"], "files": []}
     with tempfile.TemporaryDirectory() as folder:
         directory = args.input_dir or Path(folder)
         if not args.input_dir:
             materialize(directory, selected)
+        v2 = args.v2
+        if v2 is None:
+            for candidate in (HERE.parent / "cn-preview-v2.pyz", HERE.parent / "cn-preview.pyz"):
+                if candidate.is_file() and digest(candidate.read_bytes()) == PINS["v2"]["sha256"]:
+                    v2 = candidate
+                    break
+            else:
+                v2 = Path(folder) / "v2.pyz"
+                v2.write_bytes(fetch(PINS["v2"]))
+        if digest(v2.read_bytes()) != PINS["v2"]["sha256"]:
+            raise ValueError("v2 program differs from published reference")
         v1 = args.v1 or HERE.parent / "cn-preview-v1.pyz"
         if not args.v1 and not v1.exists():
             v1 = Path(folder) / "v1.pyz"
@@ -96,8 +107,8 @@ def main():
                 if decode(frame) != data:
                     raise ValueError("Control failed: " + name)
                 controls[name] = len(frame)
-            entry.update(controls=controls, v1=cli(v1, path, []), default=cli(args.v2, path, []),
-                         compact=cli(args.v2, path, ["--with-brotli"]))
+            entry.update(controls=controls, v1=cli(v1, path, []), default=cli(v2, path, []),
+                         compact=cli(v2, path, ["--with-brotli"]))
             result["files"].append(entry)
     with args.out.open("x", encoding="utf-8") as stream:
         json.dump(result, stream, indent=2)

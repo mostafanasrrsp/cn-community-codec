@@ -1,4 +1,4 @@
-# Corridor Numerics Community Codec • Experimental preview 0.2.0
+# Corridor Numerics Community Codec • Experimental preview 0.3.0
 
 Pack a single file, restore the exact bytes, and see which method won. A second, explicitly selected tool creates queryable aperture geometry for the ideal absorbing straight-prism model in Revision 9. Everything runs locally. The software is free under the MIT license. The public studies below can be reproduced from the linked upstream data.
 
@@ -19,7 +19,7 @@ Try the same three commands on a copy of your own STEP file, image or document. 
 ## Which method runs?
 
 * **Ordinary files** up to 64 MiB: CNF1 compares raw storage, zlib, bzip2 and XZ. For incompressible input the complete output may grow by 45 bytes.
-* **Plain-text STEP Part 21** up to 8 MiB: the tool also tries SXD1 on matching inputs. It separates references from surrounding text and describes each reference by its difference from the last declaration, then compresses the resulting bytes with XZ. Version 0.2 also tries two SXD2 XZ profiles that separate literal and numeric streams. Optionally try a third with `--with-brotli`. Restore to STEP before opening the model in CAD.
+* **Plain-text STEP Part 21** up to 8 MiB: the tool also tries SXD1 on matching inputs. It separates references from surrounding text and describes each reference by its difference from the last declaration, then compresses the resulting bytes with XZ. Version 0.2 also tries two SXD2 XZ profiles that separate literal and numeric streams. Version 0.3 also tries a dictionary for exact repeated decimal strings. Add `--with-brotli` to try Brotli profiles for split, dual-decimal and dictionary encoding. Restore to STEP before opening the model in CAD.
 * **Recognized fixed-width NOAA SURFRAD records** up to 8 MiB: the tool also tries grouping matching byte positions across records and then applying XZ. Add `--with-brotli` to the pack command to try Brotli as well. Reading a winning Brotli frame requires the Brotli executable on PATH. Other formats and station layouts use the ordinary path.
 * The encoder keeps the smallest eligible complete frame and verifies it by decoding before writing. The optional system utilities for reference benchmarks are listed in the study guides. Compressor search costs time and memory. Single-file limits make this an experiment on modest inputs.
 
@@ -30,6 +30,12 @@ Try the same three commands on a copy of your own STEP file, image or document. 
     python3 cn-preview.pyz geometry-query example.gx01 1 0.5 0
 
 The last command returns transmission 0.75. Row indices start at zero. GX01 bounds the ideal transmission error at 0.010 over directions for each supplied aperture. Keep the input geometry, stable identifiers and coordinate frames with the application using this sidecar. Recovering an original file calls for the ordinary lossless pack/unpack commands above.
+
+## Version 0.3 STEP study
+
+On four additional STEP drawings, including one private file, v0.3 saved 292 bytes in the default mode and 7,103 bytes (1.57%) when both versions could try Brotli. The three public drawings reproduce 6,681 bytes of the optional saving. With the default options, their combined frame size was the same in both releases. The v0.3 reader is 24,700 bytes, up 2,750 bytes from v0.2. If each recipient also needs the reader, that increase reduces the four-file optional saving to 4,353 bytes before any cost of distributing Python or Brotli.
+
+For exact public inputs, per-file sizes, verification and steps to repeat the experiment, see the [v0.3 comparison](step_v3_study/README.md). The [SXD3 format](file_study/SXD3.md) describes the decoder.
 
 ## Version 0.2 STEP study
 

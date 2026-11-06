@@ -1,4 +1,8 @@
 {
+  "v2": {
+    "url": "https://github.com/mostafanasrrsp/cn-community-codec/releases/download/v0.2.0-preview/cn-preview.pyz",
+    "sha256": "1b0abbafa95ef49149b8cfc55d35138e053aadca5b01d75fcaed851d618ef1e3"
+  },
   "archives": {
     "f1": {
       "url": "https://corridornumerics.com/open-bench/Open-Aperture-F1-M01.zip",

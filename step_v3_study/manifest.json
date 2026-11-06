@@ -1,0 +1,33 @@
+{
+  "v3_sha256": "26ced6836fc613ddd698a86fc901c908161736be1abeff2fb973398faebaf0cd",
+  "v2": {
+    "url": "https://github.com/mostafanasrrsp/cn-community-codec/releases/download/v0.2.0-preview/cn-preview.pyz",
+    "sha256": "1b0abbafa95ef49149b8cfc55d35138e053aadca5b01d75fcaed851d618ef1e3"
+  },
+  "files": [
+    {
+      "file": "nist_ctc_04_asme1_ap242-e1.stp",
+      "input_bytes": 1287291,
+      "sha256": "20b43b54ce25d4ed17cff794084c406e831c687f5b62471d3371eef33669e355",
+      "group": "transfer",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ctc_04_asme1_ap242-e1.stp"
+    },
+    {
+      "file": "nist_ftc_07_asme1_ap242-e2.stp",
+      "input_bytes": 1478375,
+      "sha256": "aa8115c12e12a99cc439477cbfd222916f9ec629fbb3c9002b18e0c264c9a892",
+      "group": "transfer",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_ftc_07_asme1_ap242-e2.stp"
+    },
+    {
+      "file": "nist_stc_07_asme1_ap242-e3.stp",
+      "input_bytes": 1945387,
+      "sha256": "2dddf9b8894bc241f7ffddf3dc4502baa3d49c374e8784039d14b86473d54832",
+      "group": "transfer",
+      "archive": "nist",
+      "member": "NIST-PMI-STEP-Files/nist_stc_07_asme1_ap242-e3.stp"
+    }
+  ]
+}

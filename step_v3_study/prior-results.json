@@ -1,0 +1,1058 @@
+{
+  "python": "3.9.6",
+  "platform": "Darwin-arm64",
+  "v3_sha256": "26ced6836fc613ddd698a86fc901c908161736be1abeff2fb973398faebaf0cd",
+  "v2_sha256": "1b0abbafa95ef49149b8cfc55d35138e053aadca5b01d75fcaed851d618ef1e3",
+  "files": [
+    {
+      "file": "A1_RECT_cassette.step",
+      "group": "F1",
+      "input_bytes": 142986,
+      "sha256": "7de6e6b1e8d5bb89e884afc1b038f952185ffc6b32eb2c9d8cb4214b1c1d860d",
+      "portable": {
+        "v2": {
+          "bytes": 3393,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "fe5957cc5d6a7aa2bde25bdb032939ccd3cd5bcfff2447ba3317184822e235b7",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18209,
+            "SXD1": 4300,
+            "SXD2-split-tuned": 3693,
+            "SXD2-dual-floats-tuned": 3393
+          }
+        },
+        "v3": {
+          "bytes": 3357,
+          "format": "SXD3",
+          "method": "dictionary-xz",
+          "wire_sha256": "d02c164349528343b2aaaabd170e2053305e694e76db3b4fc689d971c178295a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18209,
+            "SXD1": 4300,
+            "SXD2-split-tuned": 3693,
+            "SXD2-dual-floats-tuned": 3393,
+            "SXD3-dictionary-xz": 3357
+          }
+        },
+        "saved_bytes": 36
+      },
+      "optional": {
+        "v2": {
+          "bytes": 3267,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "3557d94cd82de5b6e5dd8651a559e63ebd5c1874bd1806e2372325088d25afd1",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18209,
+            "SXD1": 4300,
+            "SXD2-split-tuned": 3693,
+            "SXD2-dual-floats-tuned": 3393,
+            "SXD2-split-brotli": 3267
+          }
+        },
+        "v3": {
+          "bytes": 2974,
+          "format": "SXD3",
+          "method": "dictionary-brotli",
+          "wire_sha256": "40787f1cf78c2658c4e3f82ac4b64901b478958ab46825404bcb5314f35ddc84",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18209,
+            "SXD1": 4300,
+            "SXD2-split-tuned": 3693,
+            "SXD2-dual-floats-tuned": 3393,
+            "SXD2-split-brotli": 3267,
+            "SXD3-dictionary-xz": 3357,
+            "SXD3-dual-floats-brotli": 3068,
+            "SXD3-dictionary-brotli": 2974
+          }
+        },
+        "saved_bytes": 293
+      }
+    },
+    {
+      "file": "A1_SQ_cassette.step",
+      "group": "F1",
+      "input_bytes": 142870,
+      "sha256": "4d8c8cf847ef4f0f75e3bf9d096f8a12e54dd56b4078430b0ba3ebd3faa55527",
+      "portable": {
+        "v2": {
+          "bytes": 3433,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "188df62c0e3db33987a87abc85a967056cc1ec561cef4a6a9c9828830fff0076",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18145,
+            "SXD1": 4212,
+            "SXD2-split-tuned": 3657,
+            "SXD2-dual-floats-tuned": 3433
+          }
+        },
+        "v3": {
+          "bytes": 3381,
+          "format": "SXD3",
+          "method": "dictionary-xz",
+          "wire_sha256": "e306047a43e2d1d67adaef288d97d6a8480f9cea1640a3bfd999f9fb3187cc65",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18145,
+            "SXD1": 4212,
+            "SXD2-split-tuned": 3657,
+            "SXD2-dual-floats-tuned": 3433,
+            "SXD3-dictionary-xz": 3381
+          }
+        },
+        "saved_bytes": 52
+      },
+      "optional": {
+        "v2": {
+          "bytes": 3286,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "134a5d9631d26d2896afdc35fa11ea025d4af580fef93600bdc9b0b39b0bfdd7",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18145,
+            "SXD1": 4212,
+            "SXD2-split-tuned": 3657,
+            "SXD2-dual-floats-tuned": 3433,
+            "SXD2-split-brotli": 3286
+          }
+        },
+        "v3": {
+          "bytes": 3108,
+          "format": "SXD3",
+          "method": "dictionary-brotli",
+          "wire_sha256": "fca9e1ea3e0465d477dc37e3e4254383fb2aa6d16cc19aefd19bd11e386dba13",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 18145,
+            "SXD1": 4212,
+            "SXD2-split-tuned": 3657,
+            "SXD2-dual-floats-tuned": 3433,
+            "SXD2-split-brotli": 3286,
+            "SXD3-dictionary-xz": 3381,
+            "SXD3-dual-floats-brotli": 3125,
+            "SXD3-dictionary-brotli": 3108
+          }
+        },
+        "saved_bytes": 178
+      }
+    },
+    {
+      "file": "A2_DARK_reference.step",
+      "group": "F1",
+      "input_bytes": 113091,
+      "sha256": "869c1635badddc3a8cdac2878d6746515b094284b0cb1ef40db4d52115df09bf",
+      "portable": {
+        "v2": {
+          "bytes": 4601,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "8a11ad7d72dc84432354bbbeea20d0635aa4e0c134642a0391c22795b1ecbc4b",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 15489,
+            "SXD1": 4996,
+            "SXD2-split-tuned": 4601,
+            "SXD2-dual-floats-tuned": 4645
+          }
+        },
+        "v3": {
+          "bytes": 4601,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "8a11ad7d72dc84432354bbbeea20d0635aa4e0c134642a0391c22795b1ecbc4b",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 15489,
+            "SXD1": 4996,
+            "SXD2-split-tuned": 4601,
+            "SXD2-dual-floats-tuned": 4645,
+            "SXD3-dictionary-xz": 4633
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 4237,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "1e3b8acfc321325cf07637b76da9d3d2d30536fb95b469975a0d1685f930e3eb",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 15489,
+            "SXD1": 4996,
+            "SXD2-split-tuned": 4601,
+            "SXD2-dual-floats-tuned": 4645,
+            "SXD2-split-brotli": 4237
+          }
+        },
+        "v3": {
+          "bytes": 4237,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "1e3b8acfc321325cf07637b76da9d3d2d30536fb95b469975a0d1685f930e3eb",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 15489,
+            "SXD1": 4996,
+            "SXD2-split-tuned": 4601,
+            "SXD2-dual-floats-tuned": 4645,
+            "SXD2-split-brotli": 4237,
+            "SXD3-dictionary-xz": 4633,
+            "SXD3-dual-floats-brotli": 4301,
+            "SXD3-dictionary-brotli": 4318
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "A2_RECT_reference.step",
+      "group": "F1",
+      "input_bytes": 128572,
+      "sha256": "b53ed19490fd7b2ae52e6292b4ea8f410fc69ddcb0802ef6a2f93d0b93a1ed6a",
+      "portable": {
+        "v2": {
+          "bytes": 5037,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "3ffef94ee847a8bcbfa2c755946e7d6f4d012acd38cbe245dbfbd3a64937d97e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17311,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5037,
+            "SXD2-dual-floats-tuned": 5109
+          }
+        },
+        "v3": {
+          "bytes": 5037,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "3ffef94ee847a8bcbfa2c755946e7d6f4d012acd38cbe245dbfbd3a64937d97e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17311,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5037,
+            "SXD2-dual-floats-tuned": 5109,
+            "SXD3-dictionary-xz": 5089
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 4642,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "99ad221da79157ab7b2a15c0185c252bf6ae46c31ed349a72e8d8a9c987b2000",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17311,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5037,
+            "SXD2-dual-floats-tuned": 5109,
+            "SXD2-split-brotli": 4642
+          }
+        },
+        "v3": {
+          "bytes": 4642,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "99ad221da79157ab7b2a15c0185c252bf6ae46c31ed349a72e8d8a9c987b2000",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17311,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5037,
+            "SXD2-dual-floats-tuned": 5109,
+            "SXD2-split-brotli": 4642,
+            "SXD3-dictionary-xz": 5089,
+            "SXD3-dual-floats-brotli": 4746,
+            "SXD3-dictionary-brotli": 4768
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "A2_SQ_reference.step",
+      "group": "F1",
+      "input_bytes": 128567,
+      "sha256": "9e278b3d4356a7c2492cbf0e473c387c3eaf0400141e3d5840468f76e8c96179",
+      "portable": {
+        "v2": {
+          "bytes": 5029,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "3a9ead8925f0d223d83deaf55da161ce0215514acec339d32086972b82c1358d",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17242,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5029,
+            "SXD2-dual-floats-tuned": 5065
+          }
+        },
+        "v3": {
+          "bytes": 5029,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "3a9ead8925f0d223d83deaf55da161ce0215514acec339d32086972b82c1358d",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17242,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5029,
+            "SXD2-dual-floats-tuned": 5065,
+            "SXD3-dictionary-xz": 5041
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 4646,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "e3c13785084230542d039c981a84ab76e93791a6932108e2ad6cc2367556c3d0",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17242,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5029,
+            "SXD2-dual-floats-tuned": 5065,
+            "SXD2-split-brotli": 4646
+          }
+        },
+        "v3": {
+          "bytes": 4646,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "e3c13785084230542d039c981a84ab76e93791a6932108e2ad6cc2367556c3d0",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 17242,
+            "SXD1": 5476,
+            "SXD2-split-tuned": 5029,
+            "SXD2-dual-floats-tuned": 5065,
+            "SXD2-split-brotli": 4646,
+            "SXD3-dictionary-xz": 5041,
+            "SXD3-dual-floats-brotli": 4733,
+            "SXD3-dictionary-brotli": 4724
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "A3_installed_fixture.step",
+      "group": "F1",
+      "input_bytes": 297618,
+      "sha256": "fe3883e55903ca04ffc929f3ed723d9d4f26121260ab48b2e9253f61460b910b",
+      "portable": {
+        "v2": {
+          "bytes": 6889,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "c0997fdbafecd336b6978fac6fdb1960e4fb1c58d69d9fa9a9a6520ccffc5682",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 38333,
+            "SXD1": 7956,
+            "SXD2-split-tuned": 6889,
+            "SXD2-dual-floats-tuned": 6913
+          }
+        },
+        "v3": {
+          "bytes": 6889,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "c0997fdbafecd336b6978fac6fdb1960e4fb1c58d69d9fa9a9a6520ccffc5682",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 38333,
+            "SXD1": 7956,
+            "SXD2-split-tuned": 6889,
+            "SXD2-dual-floats-tuned": 6913,
+            "SXD3-dictionary-xz": 6897
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 6472,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "765e189948432dce671ce0b439883a3c0a2e1369dd5809ef0bf0190605789caf",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 38333,
+            "SXD1": 7956,
+            "SXD2-split-tuned": 6889,
+            "SXD2-dual-floats-tuned": 6913,
+            "SXD2-split-brotli": 6472
+          }
+        },
+        "v3": {
+          "bytes": 6472,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "765e189948432dce671ce0b439883a3c0a2e1369dd5809ef0bf0190605789caf",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 38333,
+            "SXD1": 7956,
+            "SXD2-split-tuned": 6889,
+            "SXD2-dual-floats-tuned": 6913,
+            "SXD2-split-brotli": 6472,
+            "SXD3-dictionary-xz": 6897,
+            "SXD3-dual-floats-brotli": 6519,
+            "SXD3-dictionary-brotli": 6492
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_ctc_01_asme1_ap242-e1.stp",
+      "group": "AP242",
+      "input_bytes": 396445,
+      "sha256": "85a5752da05f53c456ca3a9e038c90358e1d5a3141d1f0d6e5f0970f2356e821",
+      "portable": {
+        "v2": {
+          "bytes": 51341,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "f1c4694358ea29a8b3e5d43d688a5ce41e55d82eda3088e498e362ca1b5dd11f",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 68965,
+            "SXD1": 54916,
+            "SXD2-split-tuned": 52633,
+            "SXD2-dual-floats-tuned": 51341
+          }
+        },
+        "v3": {
+          "bytes": 51341,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "f1c4694358ea29a8b3e5d43d688a5ce41e55d82eda3088e498e362ca1b5dd11f",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 68965,
+            "SXD1": 54916,
+            "SXD2-split-tuned": 52633,
+            "SXD2-dual-floats-tuned": 51341,
+            "SXD3-dictionary-xz": 52541
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 51341,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "f1c4694358ea29a8b3e5d43d688a5ce41e55d82eda3088e498e362ca1b5dd11f",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 68965,
+            "SXD1": 54916,
+            "SXD2-split-tuned": 52633,
+            "SXD2-dual-floats-tuned": 51341,
+            "SXD2-split-brotli": 55333
+          }
+        },
+        "v3": {
+          "bytes": 51341,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "f1c4694358ea29a8b3e5d43d688a5ce41e55d82eda3088e498e362ca1b5dd11f",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 68965,
+            "SXD1": 54916,
+            "SXD2-split-tuned": 52633,
+            "SXD2-dual-floats-tuned": 51341,
+            "SXD2-split-brotli": 55333,
+            "SXD3-dictionary-xz": 52541,
+            "SXD3-dual-floats-brotli": 52833,
+            "SXD3-dictionary-brotli": 54554
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_ctc_02_asme1_ap242-e2.stp",
+      "group": "AP242",
+      "input_bytes": 1981342,
+      "sha256": "99a0a2079ddeb64d05c2432cbe931fa17c89da60d8b0bcb0b11bd0ed94fa2e68",
+      "portable": {
+        "v2": {
+          "bytes": 227877,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "42a3af0a7d94fb6e0fd8bbd21d3b6e15685e8b21f1846eb00e7a41cdc1bd1d04",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 326313,
+            "SXD1": 246352,
+            "SXD2-split-tuned": 240277,
+            "SXD2-dual-floats-tuned": 227877
+          }
+        },
+        "v3": {
+          "bytes": 227877,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "42a3af0a7d94fb6e0fd8bbd21d3b6e15685e8b21f1846eb00e7a41cdc1bd1d04",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 326313,
+            "SXD1": 246352,
+            "SXD2-split-tuned": 240277,
+            "SXD2-dual-floats-tuned": 227877,
+            "SXD3-dictionary-xz": 234625
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 227877,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "42a3af0a7d94fb6e0fd8bbd21d3b6e15685e8b21f1846eb00e7a41cdc1bd1d04",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 326313,
+            "SXD1": 246352,
+            "SXD2-split-tuned": 240277,
+            "SXD2-dual-floats-tuned": 227877,
+            "SXD2-split-brotli": 247636
+          }
+        },
+        "v3": {
+          "bytes": 227877,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "42a3af0a7d94fb6e0fd8bbd21d3b6e15685e8b21f1846eb00e7a41cdc1bd1d04",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 326313,
+            "SXD1": 246352,
+            "SXD2-split-tuned": 240277,
+            "SXD2-dual-floats-tuned": 227877,
+            "SXD2-split-brotli": 247636,
+            "SXD3-dictionary-xz": 234625,
+            "SXD3-dual-floats-brotli": 232320,
+            "SXD3-dictionary-brotli": 242284
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_ftc_08_asme1_ap242-e1-tg.stp",
+      "group": "AP242",
+      "input_bytes": 2120356,
+      "sha256": "841a9ac51a32fe25b872f283b0b8770c77fee4e34adc8499f88a6e1bafd8e578",
+      "portable": {
+        "v2": {
+          "bytes": 290333,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7d6aa14ef0691225e21c1bd0f2d3e10f901ba64a01be759976ebcc213cd2006d",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 437449,
+            "SXD1": 314184,
+            "SXD2-split-tuned": 307981,
+            "SXD2-dual-floats-tuned": 290333
+          }
+        },
+        "v3": {
+          "bytes": 290333,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7d6aa14ef0691225e21c1bd0f2d3e10f901ba64a01be759976ebcc213cd2006d",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 437449,
+            "SXD1": 314184,
+            "SXD2-split-tuned": 307981,
+            "SXD2-dual-floats-tuned": 290333,
+            "SXD3-dictionary-xz": 298801
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 290333,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7d6aa14ef0691225e21c1bd0f2d3e10f901ba64a01be759976ebcc213cd2006d",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 437449,
+            "SXD1": 314184,
+            "SXD2-split-tuned": 307981,
+            "SXD2-dual-floats-tuned": 290333,
+            "SXD2-split-brotli": 309699
+          }
+        },
+        "v3": {
+          "bytes": 290333,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7d6aa14ef0691225e21c1bd0f2d3e10f901ba64a01be759976ebcc213cd2006d",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 437449,
+            "SXD1": 314184,
+            "SXD2-split-tuned": 307981,
+            "SXD2-dual-floats-tuned": 290333,
+            "SXD2-split-brotli": 309699,
+            "SXD3-dictionary-xz": 298801,
+            "SXD3-dual-floats-brotli": 293314,
+            "SXD3-dictionary-brotli": 300991
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_ftc_08_asme1_ap242-e2.stp",
+      "group": "AP242",
+      "input_bytes": 4722264,
+      "sha256": "7b9283b4288d152fd181d76c39285d7c79fbba34fda1e14a41ac4a983f6d68b3",
+      "portable": {
+        "v2": {
+          "bytes": 963021,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "1a8f36ca56d5218041622975f4a4c842f0f68720d9fb2a1d2d3a739f307d178f",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1242105,
+            "SXD1": 1001716,
+            "SXD2-split-tuned": 1000653,
+            "SXD2-dual-floats-tuned": 963021
+          }
+        },
+        "v3": {
+          "bytes": 955061,
+          "format": "SXD3",
+          "method": "dictionary-xz",
+          "wire_sha256": "5d8f3411402830cf4b2da37bbe5f58e44c615851dccc7bc1a56aa81940e04291",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1242105,
+            "SXD1": 1001716,
+            "SXD2-split-tuned": 1000653,
+            "SXD2-dual-floats-tuned": 963021,
+            "SXD3-dictionary-xz": 955061
+          }
+        },
+        "saved_bytes": 7960
+      },
+      "optional": {
+        "v2": {
+          "bytes": 963021,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "1a8f36ca56d5218041622975f4a4c842f0f68720d9fb2a1d2d3a739f307d178f",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1242105,
+            "SXD1": 1001716,
+            "SXD2-split-tuned": 1000653,
+            "SXD2-dual-floats-tuned": 963021,
+            "SXD2-split-brotli": 1015161
+          }
+        },
+        "v3": {
+          "bytes": 955061,
+          "format": "SXD3",
+          "method": "dictionary-xz",
+          "wire_sha256": "5d8f3411402830cf4b2da37bbe5f58e44c615851dccc7bc1a56aa81940e04291",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1242105,
+            "SXD1": 1001716,
+            "SXD2-split-tuned": 1000653,
+            "SXD2-dual-floats-tuned": 963021,
+            "SXD2-split-brotli": 1015161,
+            "SXD3-dictionary-xz": 955061,
+            "SXD3-dual-floats-brotli": 975151,
+            "SXD3-dictionary-brotli": 967275
+          }
+        },
+        "saved_bytes": 7960
+      }
+    },
+    {
+      "file": "nist_stc_06_asme1_ap242-e3.stp",
+      "group": "AP242",
+      "input_bytes": 1006401,
+      "sha256": "71777c28da76da0e8a667e4cbe792d5f72c09b5c56440c9744d3d50ca96ecc8d",
+      "portable": {
+        "v2": {
+          "bytes": 112489,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "e28a0dc27785da590a332cf33886fc969d76eebe313135509a7b4ab6935ac1be",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 193317,
+            "SXD1": 123328,
+            "SXD2-split-tuned": 120837,
+            "SXD2-dual-floats-tuned": 112489
+          }
+        },
+        "v3": {
+          "bytes": 112489,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "e28a0dc27785da590a332cf33886fc969d76eebe313135509a7b4ab6935ac1be",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 193317,
+            "SXD1": 123328,
+            "SXD2-split-tuned": 120837,
+            "SXD2-dual-floats-tuned": 112489,
+            "SXD3-dictionary-xz": 121521
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 112489,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "e28a0dc27785da590a332cf33886fc969d76eebe313135509a7b4ab6935ac1be",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 193317,
+            "SXD1": 123328,
+            "SXD2-split-tuned": 120837,
+            "SXD2-dual-floats-tuned": 112489,
+            "SXD2-split-brotli": 120709
+          }
+        },
+        "v3": {
+          "bytes": 112489,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "e28a0dc27785da590a332cf33886fc969d76eebe313135509a7b4ab6935ac1be",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 193317,
+            "SXD1": 123328,
+            "SXD2-split-tuned": 120837,
+            "SXD2-dual-floats-tuned": 112489,
+            "SXD2-split-brotli": 120709,
+            "SXD3-dictionary-xz": 121521,
+            "SXD3-dual-floats-brotli": 114541,
+            "SXD3-dictionary-brotli": 116895
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "MBDTest01_1.step",
+      "group": "AP242",
+      "input_bytes": 65732,
+      "sha256": "a228e4fbb2f9764464e3b93be926aff8d2b145ded046a6e0e17e5cf6e2e056e2",
+      "portable": {
+        "v2": {
+          "bytes": 2837,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "cde5798855fa4fb13efd21569c92e774071a2133e8f5401abc77688109e5ce29",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 9642,
+            "SXD1": 3012,
+            "SXD2-split-tuned": 2837,
+            "SXD2-dual-floats-tuned": 2905
+          }
+        },
+        "v3": {
+          "bytes": 2837,
+          "format": "SXD2",
+          "method": "split-tuned",
+          "wire_sha256": "cde5798855fa4fb13efd21569c92e774071a2133e8f5401abc77688109e5ce29",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 9642,
+            "SXD1": 3012,
+            "SXD2-split-tuned": 2837,
+            "SXD2-dual-floats-tuned": 2905,
+            "SXD3-dictionary-xz": 2905
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 2563,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "d5aa7bed25eb1cc87b2d5009fe7af5d04d1c07875ea9a34656ef7783f845214e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 9642,
+            "SXD1": 3012,
+            "SXD2-split-tuned": 2837,
+            "SXD2-dual-floats-tuned": 2905,
+            "SXD2-split-brotli": 2563
+          }
+        },
+        "v3": {
+          "bytes": 2563,
+          "format": "SXD2",
+          "method": "split-brotli",
+          "wire_sha256": "d5aa7bed25eb1cc87b2d5009fe7af5d04d1c07875ea9a34656ef7783f845214e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 9642,
+            "SXD1": 3012,
+            "SXD2-split-tuned": 2837,
+            "SXD2-dual-floats-tuned": 2905,
+            "SXD2-split-brotli": 2563,
+            "SXD3-dictionary-xz": 2905,
+            "SXD3-dual-floats-brotli": 2612,
+            "SXD3-dictionary-brotli": 2604
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_ctc_03_asme1_ap242-e2.stp",
+      "group": "fresh",
+      "input_bytes": 673846,
+      "sha256": "196b665776e759282f80fc8fb27d7bceb995df77cf78b7ce48347535a4d6cb5f",
+      "portable": {
+        "v2": {
+          "bytes": 84109,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7106667dde2f1b9e66e501d28f8b544bb283265b53e4bf6eccfb1c0ed16cde7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 110593,
+            "SXD1": 89076,
+            "SXD2-split-tuned": 86793,
+            "SXD2-dual-floats-tuned": 84109
+          }
+        },
+        "v3": {
+          "bytes": 84109,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7106667dde2f1b9e66e501d28f8b544bb283265b53e4bf6eccfb1c0ed16cde7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 110593,
+            "SXD1": 89076,
+            "SXD2-split-tuned": 86793,
+            "SXD2-dual-floats-tuned": 84109,
+            "SXD3-dictionary-xz": 86297
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 84109,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7106667dde2f1b9e66e501d28f8b544bb283265b53e4bf6eccfb1c0ed16cde7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 110593,
+            "SXD1": 89076,
+            "SXD2-split-tuned": 86793,
+            "SXD2-dual-floats-tuned": 84109,
+            "SXD2-split-brotli": 90817
+          }
+        },
+        "v3": {
+          "bytes": 84109,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "7106667dde2f1b9e66e501d28f8b544bb283265b53e4bf6eccfb1c0ed16cde7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 110593,
+            "SXD1": 89076,
+            "SXD2-split-tuned": 86793,
+            "SXD2-dual-floats-tuned": 84109,
+            "SXD2-split-brotli": 90817,
+            "SXD3-dictionary-xz": 86297,
+            "SXD3-dual-floats-brotli": 87474,
+            "SXD3-dictionary-brotli": 90352
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_ftc_06_asme1_ap242-e2.stp",
+      "group": "fresh",
+      "input_bytes": 1971192,
+      "sha256": "b87afb7f25adc0d44d12e182209d50f0b085b533c0742fb8ffd58f4c87403447",
+      "portable": {
+        "v2": {
+          "bytes": 269097,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "b0379e788c76cb8d1c4e9a1355520dab4c66d29f9deee11e49f61d538f7c3e1e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 342589,
+            "SXD1": 278780,
+            "SXD2-split-tuned": 275065,
+            "SXD2-dual-floats-tuned": 269097
+          }
+        },
+        "v3": {
+          "bytes": 269097,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "b0379e788c76cb8d1c4e9a1355520dab4c66d29f9deee11e49f61d538f7c3e1e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 342589,
+            "SXD1": 278780,
+            "SXD2-split-tuned": 275065,
+            "SXD2-dual-floats-tuned": 269097,
+            "SXD3-dictionary-xz": 271061
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 269097,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "b0379e788c76cb8d1c4e9a1355520dab4c66d29f9deee11e49f61d538f7c3e1e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 342589,
+            "SXD1": 278780,
+            "SXD2-split-tuned": 275065,
+            "SXD2-dual-floats-tuned": 269097,
+            "SXD2-split-brotli": 285793
+          }
+        },
+        "v3": {
+          "bytes": 269097,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "b0379e788c76cb8d1c4e9a1355520dab4c66d29f9deee11e49f61d538f7c3e1e",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 342589,
+            "SXD1": 278780,
+            "SXD2-split-tuned": 275065,
+            "SXD2-dual-floats-tuned": 269097,
+            "SXD2-split-brotli": 285793,
+            "SXD3-dictionary-xz": 271061,
+            "SXD3-dual-floats-brotli": 278098,
+            "SXD3-dictionary-brotli": 285963
+          }
+        },
+        "saved_bytes": 0
+      }
+    },
+    {
+      "file": "nist_stc_10_asme1_ap242-e2.stp",
+      "group": "fresh",
+      "input_bytes": 4875056,
+      "sha256": "fba4f46cab1ce1402362038036884631b4a41afe1c9efc5681d358c39db7ed5f",
+      "portable": {
+        "v2": {
+          "bytes": 1020585,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "ffbf760e3b57c7e67767eb09dc120c0ff276a347771db75d847087b5e59f4b7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1307085,
+            "SXD1": 1061080,
+            "SXD2-split-tuned": 1058409,
+            "SXD2-dual-floats-tuned": 1020585
+          }
+        },
+        "v3": {
+          "bytes": 1020585,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "ffbf760e3b57c7e67767eb09dc120c0ff276a347771db75d847087b5e59f4b7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1307085,
+            "SXD1": 1061080,
+            "SXD2-split-tuned": 1058409,
+            "SXD2-dual-floats-tuned": 1020585,
+            "SXD3-dictionary-xz": 1046909
+          }
+        },
+        "saved_bytes": 0
+      },
+      "optional": {
+        "v2": {
+          "bytes": 1020585,
+          "format": "SXD2",
+          "method": "dual-floats-tuned",
+          "wire_sha256": "ffbf760e3b57c7e67767eb09dc120c0ff276a347771db75d847087b5e59f4b7a",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1307085,
+            "SXD1": 1061080,
+            "SXD2-split-tuned": 1058409,
+            "SXD2-dual-floats-tuned": 1020585,
+            "SXD2-split-brotli": 1061177
+          }
+        },
+        "v3": {
+          "bytes": 1015050,
+          "format": "SXD3",
+          "method": "dictionary-brotli",
+          "wire_sha256": "91db934da959ccde9cf27aa5e004906457e8f202104cf1017fd74fa2a4870731",
+          "exact": true,
+          "candidate_bytes": {
+            "CNF1": 1307085,
+            "SXD1": 1061080,
+            "SXD2-split-tuned": 1058409,
+            "SXD2-dual-floats-tuned": 1020585,
+            "SXD2-split-brotli": 1061177,
+            "SXD3-dictionary-xz": 1046909,
+            "SXD3-dual-floats-brotli": 1018085,
+            "SXD3-dictionary-brotli": 1015050
+          }
+        },
+        "saved_bytes": 5535
+      }
+    }
+  ]
+}
