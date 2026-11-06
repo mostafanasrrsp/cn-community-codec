@@ -13,8 +13,9 @@ from cncodec.__main__ import main as geometry_cli, read_limited, write_output
 import solar_codec
 import step_delta
 import step_delta_v2
+import step_delta_v3
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 GEOMETRY = ("geometry-pack", "geometry-verify", "geometry-query")
 STATIONS = {b"Bondville", b"Fort Peck", b"Desert Rock"}
 LOCATION = re.compile(rb"[ \t]*[+-]?\d{1,2}\.\d+[ \t]+[+-]?\d{1,3}\.\d+[ \t]+-?\d+[ \t]+m[ \t]+version 1[ \t]*")
@@ -47,6 +48,8 @@ def restore(frame):
         return step_delta.unpack(frame)
     if tag == step_delta_v2.MAGIC:
         return step_delta_v2.unpack(frame)
+    if tag == step_delta_v3.MAGIC:
+        return step_delta_v3.unpack(frame)
     if tag == solar_codec.MAGIC:
         return solar_codec.decode(frame)
     if tag == b"GX01":
@@ -62,6 +65,8 @@ def describe(frame, original):
         method = "step-delta+xz6"
     elif tag == step_delta_v2.MAGIC:
         method = step_delta_v2.profile_name(frame)
+    elif tag == step_delta_v3.MAGIC:
+        method = step_delta_v3.profile_name(frame)
     else:
         method_id = solar_codec.HEADER.unpack_from(frame)[1]
         method = next(k for k, v in solar_codec.METHODS.items() if v == method_id)
@@ -82,7 +87,8 @@ def select(raw, with_brotli=False):
 
     def optional_brotli(key, make_frame):
         if not shutil.which("brotli"):
-            notes.append("Brotli CLI unavailable; compared portable profiles.")
+            if not notes:
+                notes.append("Brotli CLI unavailable; compared portable profiles.")
             return
         try:
             candidate = make_frame()
@@ -99,6 +105,17 @@ def select(raw, with_brotli=False):
                 consider("SXD2-" + profile, step_delta_v2.pack(raw, profile))
             if with_brotli:
                 optional_brotli("SXD2-split-brotli", lambda: step_delta_v2.pack(raw, "split-brotli"))
+            dual = step_delta_v2._split(raw, True)
+            dictionary = step_delta_v3.dictionary_payload(dual)
+            digest = hashlib.sha256(raw).digest()
+
+            def frame(payload, method):
+                return step_delta_v3.pack_payload(payload, len(raw), digest, method)
+
+            consider("SXD3-dictionary-xz", frame(dictionary, "dictionary-xz"))
+            if with_brotli:
+                optional_brotli("SXD3-dual-floats-brotli", lambda: frame(dual, "dual-floats-brotli"))
+                optional_brotli("SXD3-dictionary-brotli", lambda: frame(dictionary, "dictionary-brotli"))
     elif is_solar(raw):
         consider("SRT2-xz", solar_codec.encode(raw, "xz"))
         if with_brotli:

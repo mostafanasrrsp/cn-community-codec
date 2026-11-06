@@ -13,6 +13,7 @@ sources.update({
     "solar_codec.py": (lab / "solar_study" / "solar_codec.py").read_bytes(),
     "step_delta.py": (lab / "file_study" / "step_delta.py").read_bytes(),
     "step_delta_v2.py": (lab / "file_study" / "step_delta_v2.py").read_bytes(),
+    "step_delta_v3.py": (lab / "file_study" / "step_delta_v3.py").read_bytes(),
     "LICENSE": (codec / "LICENSE").read_bytes(),
     "__main__.py": b"from preview_cli import main\nraise SystemExit(main())\n",
 })
